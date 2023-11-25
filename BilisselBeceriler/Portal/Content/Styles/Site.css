@@ -1,0 +1,682 @@
+html
+{
+    width: 100%;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #919090;
+    background: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    background: url(/content/resources/images/body-bg.jpg) no-repeat center top fixed #0d7d93;
+    position: relative;
+}
+
+.container
+{
+    width: 100%;
+    position: relative;
+}
+
+.main
+{
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    position: relative;
+}
+.row-header-menu
+{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background: #fff;
+}
+.row-0
+{
+    width: 100%;
+    height: 170px;
+    position: relative;
+    background: #fff;
+}
+.row-1
+{
+    width: 100%;
+    height: 81px;
+    position: relative;
+    z-index: 1;
+    background: none;
+    background: #fff;
+}
+.row-2
+{
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    z-index: 5;
+    background: none;
+    background: #fff;
+}
+.row-3
+{
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    z-index: 5;
+    background: none;
+    height: 220px;
+    background: #fff;
+}
+.row-4
+{
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    height: 450px;
+}
+
+.row-anim
+{
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    height: 350px;
+}
+.rakunanimasyon
+{
+    float: left;
+    margin-left: 25px;
+}
+.bbanimasyon
+{
+    float: left;
+    margin-left: 5px;
+}
+.solkitap
+{
+    margin-top: 15px;
+    float: left;
+    margin-left: 25px;
+    width: 412px;
+    border: 1px solid #EAEAEA;
+    background-color: #F8F8F8; /*border-radius: 3px;*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 15px;
+}
+
+.kitapbaslik
+{
+    margin-left: 135px;
+    color: #0C7AB1;
+    font-weight: bold;
+    padding: 0 3px;
+}
+.kitpaciklama
+{
+    margin-left: 135px;
+    height: 100px;
+    padding: 0 3px;
+}
+.kitapdetay
+{
+    margin-left: 135px;
+    text-align: right;
+    height: 25px;
+}
+.kitapdetay i
+{
+    float: left;
+    font-size: 11px;
+    font-style: normal;
+    margin-left: 5px;
+    color: #444;
+}
+
+.sagkitap
+{
+    margin-top: 15px;
+    float: left;
+    margin-left: 8px;
+    width: 418px;
+    border: 1px solid #EAEAEA;
+    background-color: #F8F8F8; /*border-radius: 3px;*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 15px;
+}
+.resimKutusu {
+    float: left;
+}
+.resimKutusu img
+{
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    padding: 2px;
+    
+}
+.row-5
+{
+    width: 100%;
+    z-index: 5;
+    background: url(/content/resources/images/footer-tail.gif) repeat-y left top;
+    height: 130px;
+}
+.links
+{
+    float: left;
+}
+.row-6
+{
+    width: 100%;
+    z-index: 5;
+    background-color: transparent;
+    height: 50px;
+}
+.detaylink
+{
+    display: inline-block;
+    padding: 8px 14px 8px 13px;
+    background: #ffc500;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.666em;
+    line-height: 1.2307em;
+    text-transform: uppercase;
+}
+.detaylink:hover
+{
+    background: #f6d76d;
+}
+
+.login
+{
+    float: right;
+    text-align: left;
+    margin-right: 5px;
+}
+.row-5 div ul
+{
+    margin: 0;
+    padding: 0;
+}
+.row-5 div ul li
+{
+    margin-top: 5px;
+}
+.row-5 div ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    background: url(/content/resources/images/list-marker2.png) no-repeat left center;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+.row-5 div ul li a:hover
+{
+    background: url(/content/resources/images/list-marker1.png) no-repeat left center;
+    color: #09A6E4;
+}
+.sf-menu
+{
+    padding: 0px 0 0 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    background: none;
+}
+.sf-menu li.bgr-1
+{
+    float: left;
+    width: 149px;
+}
+.sf-menu li.bgr-2
+{
+    float: left;
+    width: 149px;
+}
+.sf-menu li.bgr-3
+{
+    float: left;
+    width: 149px;
+}
+.sf-menu li.bgr-4
+{
+    float: left;
+    width: 162px;
+}
+.sf-menu li.bgr-1 a.mains
+{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 17px 0px 11px 0px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #cae10f;
+    border-left: 1px solid #b6d50b;
+    border-bottom: 5px solid #74af05;
+    background: url(/content/resources/images/menu/bgr-1.jpg) center 0 no-repeat #9fc80a;
+}
+
+.sf-menu li.bgr-2 a.mains
+{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 17px 0px 11px 0px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #ffd800;
+    border-left: 1px solid #ffbd00;
+    border-bottom: 5px solid #ff8100;
+    background: url(/content/resources/images/menu/bgr-2.jpg) center 0 no-repeat #ffa900;
+}
+
+.sf-menu li.bgr-3 a.mains
+{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 17px 0px 11px 0px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #f95858;
+    border-left: 1px solid #f64040;
+    border-bottom: 5px solid #ef1d1d;
+    background: url(/content/resources/images/menu/bgr-3.jpg) center 0 no-repeat #f33434;
+}
+
+.sf-menu li.bgr-4 a.mains
+{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 17px 0px 11px 0px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #62e1ee;
+    border-left: 1px solid #48cee2;
+    border-bottom: 5px solid #20a2cb;
+    background: url(/content/resources/images/menu/bgr-4.jpg) center 0 no-repeat #3abeda;
+}
+
+.sf-menu li.bgr-1:hover a.mains, .sf-menu li.bgr-1.sfHover a.mains, .sf-menu li.bgr-2:hover a.mains, .sf-menu li.bgr-2.sfHover a.mains, .sf-menu li.bgr-3:hover a.mains, .sf-menu li.bgr-3.sfHover a.mains, .sf-menu li.bgr-4:hover a.mains, .sf-menu li.bgr-4.sfHover a.mains
+{
+    margin-top: 0px;
+}
+.sf-menu li.active a.mains
+{
+    margin-top: -7px !important;
+    padding-top: 17px !important;
+    padding-bottom: 18px !important;
+}
+
+.sf-menu li a
+{
+    text-decoration: none;
+}
+
+a
+{
+    color: #8c8c8c;
+    outline: none;
+}
+a:hover
+{
+    text-decoration: none;
+}
+
+ol, ul
+{
+    list-style: none;
+}
+.clear
+{
+    clear: both;
+    width: 100%;
+    line-height: 0;
+    font-size: 0;
+}
+
+
+/****************************** boxex ***********************/
+
+.box-padding
+{
+    padding: 15px 19px 21px 15px;
+}
+
+.box-1
+{
+    width: 220px;
+    height: 185px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    padding: 0;
+    background: url(/content/resources/images/paketler/bg-green.jpg) 0 0 no-repeat #a0c80a;
+    color: #fff;
+}
+.box-2
+{
+    width: 220px;
+    height: 185px;
+    position: absolute;
+    top: 25px;
+    left: 247px;
+    padding: 0;
+    background: url(/content/resources/images/paketler/bg-orange.jpg) 0 0 no-repeat #ffa800;
+    color: #fff;
+}
+.box-3
+{
+    width: 220px;
+    height: 185px;
+    position: absolute;
+    top: 25px;
+    left: 475px;
+    padding: 0;
+    background: url(/content/resources/images/paketler/bg-red.jpg) 0 0 no-repeat #f43535;
+    color: #fff;
+}
+.box-4
+{
+    width: 220px;
+    height: 185px;
+    position: absolute;
+    top: 25px;
+    left: 703px;
+    padding: 0;
+    background: url(/content/resources/images/paketler/bg-blue.jpg) 0 0 no-repeat #3abeda;
+    color: #fff;
+}
+
+.button-2
+{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 22px 0px 0px 14px;
+    text-align: left;
+    width: 85px;
+    height: 24px;
+    background: url(/content/resources/images/paketler/bg-button-2.jpg) 0 0 no-repeat;
+    text-align: center;
+}
+.button-2:hover
+{
+    color: #6d1971;
+}
+
+.button-3
+{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 22px 0px 0px 14px;
+    text-align: left;
+    width: 85px;
+    height: 24px;
+    background: url(/content/resources/images/paketler/bg-button-3.jpg) 0 0 no-repeat;
+    text-align: center;
+}
+.button-3:hover
+{
+    color: #6d1971;
+}
+
+.button-4
+{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 22px 0px 0px 14px;
+    text-align: left;
+    width: 85px;
+    height: 24px;
+    background: url(/content/resources/images/paketler/bg-button-4.jpg) 0 0 no-repeat;
+    text-align: center;
+}
+.button-4:hover
+{
+    color: #6d1971;
+}
+
+.button-5
+{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 22px 0px 0px 14px;
+    text-align: left;
+    width: 85px;
+    height: 24px;
+    background: url(/content/resources/images/paketler/bg-button-5.jpg) 0 0 no-repeat;
+    text-align: center;
+}
+.button-5:hover
+{
+    color: #6d1971;
+}
+
+#UrunDetay
+{
+    background: #eee;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#UrunTablo
+{
+    height: 300px;
+    background: #999;
+    margin-top: -60px;
+    position: relative;
+}
+#wrapper
+{
+    padding-bottom: 30px;
+}
+.icerikkpsul
+{
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    min-height: 550px;
+    text-align: justify;
+}
+.icerik
+{
+    width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 20px;
+}
+.navigasyon
+{
+    width: 100%;
+    height: 10px;
+}
+.solicerik
+{
+    float: left;
+    width: 230px;
+    background-color: #F9F8F5;
+    color: #89857A;
+}
+.solicerik div
+{
+    padding: 19px 18px 18px 21px;
+}
+.solicerik div h3
+{
+    font-weight: 700;
+    padding: 0;
+    font-size: 1.833em;
+    line-height: 1.2em;
+    margin: 0 0 .8em;
+    text-transform: uppercase;
+    color: #2f2d26;
+    margin-bottom: 0;
+}
+.solicerik ul
+{
+    margin: 0;
+    padding: 0;
+}
+.solicerik ul li
+{
+    background: url(/content/resources/images/list-marker6.gif) no-repeat left 2px;
+    padding: 0 0 0 19px;
+    margin-top: 12px;
+}
+.solicerik ul li a
+{
+    color: #89857A;
+    text-decoration: none;
+}
+
+.solicerik ul li a:hover
+{
+    text-decoration: underline;
+}
+.sagicerik
+{
+    float: left;
+    margin-left: 25px;
+    width: 620px;
+}
+.sagicerik h3
+{
+    padding: 0;
+    margin: 0;
+}
+/*------------------Tablo Stilleri--------------*/
+img
+{
+    border: 0;
+    margin-top: .5em;
+}
+.icerikkapsul table
+{
+    width: 100%;
+    border-top: 1px solid #e5eff8;
+    border-right: 1px solid #e5eff8;
+    margin: 5px;
+    border-collapse: collapse;
+}
+.icerikkapsul caption
+{
+    color: #9ba9b4;
+    font-size: .94em;
+    letter-spacing: .1em;
+    margin: 1em 0 0 0;
+    padding: 0;
+    caption-side: top;
+    text-align: center;
+}
+.icerikkapsul tr.odd td
+{
+    background: #f7fbff;
+}
+.icerikkapsul tr.odd .column1
+{
+    background: #f4f9fe;
+}
+.icerikkapsul .column1
+{
+    background: #f9fcfe;
+    text-align: left;
+}
+.icerikkapsul td
+{
+    color: #678197;
+    border-bottom: 1px solid #e5eff8;
+    border-left: 1px solid #e5eff8;
+    padding: .3em .5em;
+    text-align: center;
+}
+.icerikkapsul th
+{
+    font-weight: normal;
+    color: #678197;
+    text-align: left;
+    border-bottom: 1px solid #e5eff8;
+    border-left: 1px solid #e5eff8;
+    padding: .3em 1em;
+}
+.icerikkapsul thead th
+{
+    background: #f4f9fe;
+    text-align: center;
+    font: bold 1.2em/2em "Century Gothic" , "Trebuchet MS" ,Arial,Helvetica,sans-serif;
+    color: #66a3d3;
+}
+.icerikkapsul tfoot th
+{
+    text-align: center;
+    background: #f4f9fe;
+}
+.icerikkapsul tfoot th strong
+{
+    font: bold 1.2em "Century Gothic" , "Trebuchet MS" ,Arial,Helvetica,sans-serif;
+    margin: .5em .5em .5em 0;
+    color: #66a3d3;
+}
+.jfontsize-button
+{
+    font: bold 12px arial;
+    padding: 3px;
+    border: solid 1px #ccc;
+}
+
+.jfontsize-button:hover
+{
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    border: solid 1px #333;
+}
+
+.jfontsize-disabled, .jfontsize-disabled:hover
+{
+    color: #aaa;
+    border: solid 1px #eee;
+    background: #eee;
+}
+

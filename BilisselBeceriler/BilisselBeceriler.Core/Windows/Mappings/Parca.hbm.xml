@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.Parca,BilisselBeceriler.Entities" table="Parca" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="assigned"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="HavuzRef" column="HavuzRef" class="Havuz,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="Ad" type="String" name="Ad" not-null="true" length="80" />
+		<property column="Sira" type="Int32" name="Sira" not-null="true" />
+		<property column="TemelParcaMi" type="Boolean" name="TemelParcaMi" not-null="true" />
+		<property column="Cerceve" type="String" name="Cerceve" not-null="true" length="2147483647" />
+		<property column="Bireysel" type="Boolean" name="Bireysel" not-null="true" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListVaryans" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="ParcaRef"/>
+			<one-to-many class="Varyans,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

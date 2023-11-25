@@ -1,0 +1,1 @@
+$(function(){$('.box-box').hover(function(){$(this).stop().animate({paddingTop:17, marginTop:-17},350,'easeOutBounce')},function(){$(this).stop().animate({paddingTop:0, marginTop:0},350,'easeOutBounce')})})

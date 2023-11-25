@@ -1,0 +1,44 @@
+﻿@if (User.Identity.IsAuthenticated)
+{         
+    <table style="width: 98%;" border="1">
+        <tr style="border: none;">
+            <td style="width: auto;">
+                @ViewBag.AktifOkul.Adi
+            </td>
+            <td style="width: 150px; text-align: center;">
+                İstatistikler
+            </td>
+            <td style="width: 150px; text-align: center;" class="hover-menu">
+                Okullarım(@ViewBag.OkulListe.Count)
+                <ul class="actions no-style" style="position: absolute; background: white; display: none;
+                    z-index: 99">
+                    @foreach (var item in ViewBag.OkulListe)
+                    {
+                        <li>
+                            <img src="/Image/OkulLogo?Url=@item.Url&width=32&height=32" alt="Logo"  />
+                            <a href="/Okul/@item.Url">@item.Adi</a> </li>
+                    }
+                </ul>
+            </td>
+            <td style="width: 150px; text-align: center;">
+                Mesajlarım(@ViewBag.BildirimAdet)
+            </td>
+            <td style="width: 150px; text-align: center;">
+                @Html.ActionLink("Çıkış", "Cikis", "Login", new { }, new { @class = "mains" })
+            </td>
+        </tr>
+    </table>                
+}
+else
+{ 
+    <table style="width: 98%; border: none;">
+        <tr style="border: none;">
+            <td style="width: auto">
+                &nbsp;
+            </td>
+            <td style="width: 150px; text-align: right; border: none;">
+                @Html.ActionLink("Sisteme Giriş", "Index", "Login", new { }, null)
+            </td>
+        </tr>
+    </table>                                    
+}

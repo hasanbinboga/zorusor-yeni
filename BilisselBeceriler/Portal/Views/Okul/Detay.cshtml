@@ -1,0 +1,40 @@
+﻿@model BilisselBeceriler.Entities.Okul
+@{
+    ViewBag.Title = "Liste";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<div class="display-label">
+    Adi</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Adi)
+</div>
+<div class="display-label">
+    Url</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Url)
+</div>
+<div class="display-label">
+    Adresi</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Adresi)
+</div>
+<div class="display-label">
+    Tel</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Tel)
+</div>
+<div class="display-label">
+    WebAdresi</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.WebAdresi)
+</div>
+<div class="display-label">
+    EPostaAdresi</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.EPostaAdresi)
+</div>
+<div class="display-label">
+    AktifMi</div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.AktifMi)
+</div>

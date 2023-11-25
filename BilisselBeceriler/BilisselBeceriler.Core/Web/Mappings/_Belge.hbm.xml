@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web._Belge, BilisselBeceriler.Entities" table="Belge" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="Sablon" column="Sablon" type="string"/>
+    <many-to-one name="PaketTur" column="PaketTurRef" class="PaketTur"  />    
+    <many-to-one name="BelgeTur" column="BelgeTurRef" class="_BelgeTur"  />
+    <property name="AktifMi" column="AktifMi" type="bool"/>    
+    <many-to-one name="Cinsiyet" column="Cinsiyet" class="GenelAyarlar"  />
+    <many-to-one name="Yayin" column="YayinRef" class="_Yayin"  />
+  </class>
+</hibernate-mapping>

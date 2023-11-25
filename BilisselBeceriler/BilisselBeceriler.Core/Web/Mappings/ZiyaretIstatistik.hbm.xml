@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web.ZiyaretIstatistik, BilisselBeceriler.Entities" table="ZiyaretIstatistik" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    
+    <property name="UyeRef" column="UyeRef" type="int"/>
+    <property name="Ip" column="Ip" type="string"/>
+    <property name="SessionId" column="SessionId" type="string"/>
+    <property name="Tarih" column="Tarih" type="DateTime"/>
+  </class>
+</hibernate-mapping>

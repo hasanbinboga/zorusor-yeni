@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.Yayin,BilisselBeceriler.Entities" table="Yayin" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Properties -->
+		<property column="Sayi" type="Int32" name="Sayi" not-null="true" />
+		<property column="Tarih" type="DateTime" name="Tarih" not-null="true" />
+		<property column="Aciklama" type="String" name="Aciklama" length="500" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListBelge" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="YayinRef"/>
+			<one-to-many class="Belge,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

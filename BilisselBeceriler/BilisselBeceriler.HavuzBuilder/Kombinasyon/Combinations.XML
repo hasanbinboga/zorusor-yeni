@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Combinations</name>
+    </assembly>
+    <members>
+        <member name="T:CH.Combinations.ElementSet`1">
+            <summary>
+            Stores a set of elements from which combinations may be drawn.
+            </summary>
+            <typeparam name="T">the element type</typeparam>
+        </member>
+        <member name="M:CH.Combinations.ElementSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Constructs a new <c>ElementSet</c> from a collection of elements, using the default comparer for the element type.
+            </summary>
+            <param name="elements">the elements</param>
+        </member>
+        <member name="M:CH.Combinations.ElementSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})">
+            <summary>
+            Constructs a new <c>ElementSet</c> from a collection of an elements, using a custom comparer.
+            </summary>
+            <param name="elements">the elements</param>
+            <param name="comparer">the comparer</param>
+        </member>
+        <member name="T:CH.Combinations.Combinations`1">
+            <summary>
+            Stores a full specification of combinations to generate, and allows the construction of enumerators to generate the combinations.
+            </summary>
+            <typeparam name="T">the type to generate combinations of</typeparam>
+        </member>
+        <member name="M:CH.Combinations.Combinations`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32)">
+            <summary>
+            Constructs a new <c>Combinations</c> given a collection of elements and how many elements should be present in each combination. Note that if the same collection of elements is used with multiple <paramref name="choose"/> values, it is faster to construct an <see cref="T:CH.Combinations.ElementSet`1"/> once and use <see cref="M:CH.Combinations.Combinations`1.#ctor(CH.Combinations.ElementSet{`0},System.Int32)"/>.
+            </summary>
+            <param name="elements">the collection of elements</param>
+            <param name="choose">the length of a combination</param>
+        </member>
+        <member name="M:CH.Combinations.Combinations`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0},System.Int32)">
+            <summary>
+            Constructs a new <c>Combinations</c> given a collection of elements and how many elements should be present in each combination. Note that if the same collection of elements is used with multiple <paramref name="choose"/> values, it is faster to construct an <see cref="T:CH.Combinations.ElementSet`1"/> once and use <see cref="M:CH.Combinations.Combinations`1.#ctor(CH.Combinations.ElementSet{`0},System.Int32)"/>.
+            </summary>
+            <param name="elements">the collection of elements</param>
+            <param name="choose">the length of a combination</param>
+            <param name="comparer">the comparer used to order the elements</param>
+        </member>
+        <member name="M:CH.Combinations.Combinations`1.#ctor(CH.Combinations.ElementSet{`0},System.Int32)">
+            <summary>
+            Constructs a new <c>Combinations</c> given a collection of elements and how many elements should be present in each combination. If the same set of elements will be used with different values of <paramref name="choose"/>, this constructor is the best choice as the elements are processed only once, during the construction of the <see cref="T:CH.Combinations.ElementSet`1"/>.
+            </summary>
+            <param name="elements">the collection of elements</param>
+            <param name="choose">the length of a combination</param>
+        </member>
+        <member name="M:CH.Combinations.Combinations`1.GetEnumerator">
+            <summary>
+            Creates and returns an enumerator over the combinations. Each combination's elements will be returned in ascending order as defined by the compararer. The combinations themselves will also be returned in ascending order.
+            </summary>
+            <returns>an enumerator</returns>
+            <seealso cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+    </members>
+</doc>

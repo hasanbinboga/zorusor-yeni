@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web.Ogrenci, BilisselBeceriler.Entities" table="Ogrenci" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="Adi" column="Adi" type="string"/>
+    <property name="Soyadi" column="Soyadi" type="string"/>
+    <property name="Vesikalik" column="Vesikalik" type="string"/>
+    <many-to-one name="Cinsiyet" column="Cinsiyeti" class="GenelAyarlar"  />
+    <property name="DogumTarih" column="DogumTarihi" type="DateTime"/>
+    <property name="Baslangici" column="AbonelikBaslangici" type="DateTime"/>
+    <many-to-one name="Sinif" column="SinifRef" class="Sinif"  />
+    <many-to-one name="PaketTur" column="PaketTurRef" class="PaketTur"  />
+    <property name="AktifMi" column="AktifMi" type="bool"/>
+    <bag name="FotografListe" lazy="true">
+      <key column="OgrenciRef" />
+      <one-to-many class="BilisselBeceriler.Entities.Web.OgrenciFotograf, BilisselBeceriler.Entities"  />
+    </bag>
+  </class>
+</hibernate-mapping>

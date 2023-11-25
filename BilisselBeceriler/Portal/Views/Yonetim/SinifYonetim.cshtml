@@ -1,0 +1,38 @@
+﻿@model IEnumerable<BilisselBeceriler.Entities.Web.Sinif>
+@{
+    ViewBag.Title = "SinifYonetim";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<table>
+    <tr>
+        <th>
+            Şube
+        </th>
+        <th>
+            Sınıf
+        </th>
+        <th>
+            Logo
+        </th>
+        <th>
+            KapakLogo
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Okul.Adi)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Logo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KapakLogo)
+            </td>
+        </tr>
+    }
+</table>

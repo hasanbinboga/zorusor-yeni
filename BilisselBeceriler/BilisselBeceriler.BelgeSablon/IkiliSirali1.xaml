@@ -1,0 +1,126 @@
+﻿<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Width="793" Height="1123" Background="White">	 
+	 <Grid x:Name="Baslik" Height="70">
+        <TextBlock x:Name="txtBaslik1" Margin="6,0,0,0" Text="AYNISINI BUL" 
+        			HorizontalAlignment="Center" 
+        			FontSize="42" FontFamily="Showcard Gothic" Foreground="#917B7B7B" Height="48" Canvas.Top="2" Visibility="Hidden" />
+        <TextBlock x:Name="txtBaslik" Margin="2,0,1,0" Text="AYNISINI BUL" 
+        			HorizontalAlignment="Center" 
+        			FontSize="48" FontFamily="Arial Black" Height="50" Canvas.Left="3.83" Foreground="Black"/>
+    </Grid>	
+	<StackPanel x:Name="UstBilgi" Height="0" Orientation="Horizontal" Visibility="Hidden">
+		<Rectangle Width="50"/>
+        <Label Content="Adı Soyadı:" FontSize="15" FontWeight="Bold" />
+        <Label x:Name="lblAdsoyad" Content="Hüseyin Ömer BİNBOĞA" FontSize="15" />
+        <Label Content="Doğum Tarihi:" FontSize="15" FontWeight="Bold" />
+        <Label x:Name="lblDTarih" Content="15/05/2006" FontSize="15" />
+        <Label Content="Uygulama Tarihi:" FontSize="15" FontWeight="Bold" />
+        <Label x:Name="lblUyTarih" Content="14/03/2010" FontSize="15" />
+    </StackPanel>
+    <StackPanel x:Name="Sorular">
+        <Grid x:Name="Soru1" Height="255">
+            <Label x:Name="lblSoruNo1" Content="1)" FontSize="20" FontWeight="Bold" FontFamily="Kristen ITC"   Grid.Column="1" Margin="10,24.401,0,0" HorizontalAlignment="Left" Width="253.931" VerticalAlignment="Top" />
+            <Grid x:Name="Referans1" Grid.Column="1" VerticalAlignment="Top" Margin="60,8,0,0" HorizontalAlignment="Left">
+            	<Border Height="210" Background="#FF6D638F" BorderThickness="0" Width="210">
+            		<Border.Effect>
+            			<DropShadowEffect Direction="317" Color="Black" RenderingBias="Quality"/>
+            		</Border.Effect>
+            	</Border>
+            </Grid>
+        	<Grid x:Name="Cevap11" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="332.5,8,0,0" d:LayoutOverrides="GridBox">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+			<Grid x:Name="Cevap12" Grid.Column="1" Margin="0,8,0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+				<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+			</Grid>
+			<Grid HorizontalAlignment="Left" Margin="292.5,21,0,0" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+				<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+				<Label Content="A" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+			</Grid>
+			<Grid Margin="542.5,21,0,0" HorizontalAlignment="Left" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+				<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+				<Label Content="B" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+			</Grid>
+			<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="195" Margin="278,7,0,0" Stroke="#FFBABABA" StrokeThickness="2.5" VerticalAlignment="Top" Width="5"/>
+			<TextBlock Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 19 Mayıs 2011" FontSize="10.667" FontFamily="Tahoma" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,13"/>
+        </Grid>
+        <Grid x:Name="Soru2" Height="255">
+        	<Label x:Name="lblSoruNo2" Content="1)" FontSize="20" FontWeight="Bold" FontFamily="Kristen ITC"   Grid.Column="1" Margin="10,24.401,0,0" HorizontalAlignment="Left" Width="253.931" VerticalAlignment="Top" />
+        	<Grid x:Name="Referans2" Grid.Column="1" VerticalAlignment="Top" Margin="60,8,0,0" HorizontalAlignment="Left">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" Width="210">
+        			<Border.Effect>
+        				<DropShadowEffect Direction="317" Color="Black" RenderingBias="Quality"/>
+        			</Border.Effect>
+        		</Border>
+        	</Grid>
+        	<Grid x:Name="Cevap21" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="332.5,8,0,0" d:LayoutOverrides="GridBox">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid x:Name="Cevap22" Grid.Column="1" Margin="0,8,0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid HorizontalAlignment="Left" Margin="292.5,21,0,0" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="A" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Grid Margin="542.5,21,0,0" HorizontalAlignment="Left" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="B" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="195" Margin="278,7,0,0" Stroke="#FFBABABA" StrokeThickness="2.5" VerticalAlignment="Top" Width="5"/>
+        	<TextBlock Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 19 Mayıs 2011" FontSize="10.667" FontFamily="Tahoma" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,13"/>
+        </Grid>
+        <Grid x:Name="Soru3" Height="255">
+        	<Label x:Name="lblSoruNo3" Content="1)" FontSize="20" FontWeight="Bold" FontFamily="Kristen ITC"   Grid.Column="1" Margin="10,24.401,0,0" HorizontalAlignment="Left" Width="253.931" VerticalAlignment="Top" />
+        	<Grid x:Name="Referans3" Grid.Column="1" VerticalAlignment="Top" Margin="60,8,0,0" HorizontalAlignment="Left">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" Width="210">
+        			<Border.Effect>
+        				<DropShadowEffect Direction="317" Color="Black" RenderingBias="Quality"/>
+        			</Border.Effect>
+        		</Border>
+        	</Grid>
+        	<Grid x:Name="Cevap31" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="332.5,8,0,0" d:LayoutOverrides="GridBox">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid x:Name="Cevap32" Grid.Column="1" Margin="0,8,0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid HorizontalAlignment="Left" Margin="292.5,21,0,0" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="A" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Grid Margin="542.5,21,0,0" HorizontalAlignment="Left" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="B" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="195" Margin="278,7,0,0" Stroke="#FFBABABA" StrokeThickness="2.5" VerticalAlignment="Top" Width="5"/>
+        	<TextBlock Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 19 Mayıs 2011" FontSize="10.667" FontFamily="Tahoma" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,13"/>
+        </Grid>
+        <Grid x:Name="Soru4" Height="255">
+        	<Label x:Name="lblSoruNo4" Content="1)" FontSize="20" FontWeight="Bold" FontFamily="Kristen ITC"   Grid.Column="1" Margin="10,24.401,0,0" HorizontalAlignment="Left" Width="253.931" VerticalAlignment="Top" />
+        	<Grid x:Name="Referans4" Grid.Column="1" VerticalAlignment="Top" Margin="60,8,0,0" HorizontalAlignment="Left">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" Width="210">
+        			<Border.Effect>
+        				<DropShadowEffect Direction="317" Color="Black" RenderingBias="Quality"/>
+        			</Border.Effect>
+        		</Border>
+        	</Grid>
+        	<Grid x:Name="Cevap41" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="332.5,8,0,0" d:LayoutOverrides="GridBox">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid x:Name="Cevap42" Grid.Column="1" Margin="0,8,0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+        		<Border Height="210" Background="#FF6D638F" BorderThickness="0" d:LayoutOverrides="GridBox" Width="210"/>
+        	</Grid>
+        	<Grid HorizontalAlignment="Left" Margin="292.5,21,0,0" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="A" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Grid Margin="542.5,21,0,0" HorizontalAlignment="Left" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="GridBox">
+        		<Ellipse Fill="#FFF4F4F5" Stroke="#FFBABABA" StrokeThickness="5" d:LayoutOverrides="GridBox"/>
+        		<Label Content="B" Foreground="#FFBABABA" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="13.333"/>
+        	</Grid>
+        	<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="195" Margin="278,7,0,0" Stroke="#FFBABABA" StrokeThickness="2.5" VerticalAlignment="Top" Width="5"/>
+        	<TextBlock Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 19 Mayıs 2011" FontSize="10.667" FontFamily="Tahoma" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,13"/>
+        </Grid>
+    </StackPanel>
+    <Label x:Name="lblSayfaNo" Content="Sayfa 1" HorizontalAlignment="Center" FontFamily="Tahoma" FontWeight="Bold" Padding="0,5,0,0" />
+</StackPanel>

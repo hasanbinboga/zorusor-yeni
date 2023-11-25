@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BilisselBeceriler.Entities.Web.Sinif>
+@{
+    ViewBag.Title = "Liste";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<table>
+    <tr>
+        <th>
+            Okul Adi
+        </th>
+        <th>
+            Sinif Adi
+        </th>
+        <th>
+            Yas Gurubu
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Okul.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yas.Adi)
+            </td>
+        </tr>
+    }
+</table>

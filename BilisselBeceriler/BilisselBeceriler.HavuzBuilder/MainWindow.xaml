@@ -1,0 +1,15 @@
+﻿<Window x:Class="BilisselBeceriler.HavuzBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="247" Width="535">
+    <Border BorderBrush="AliceBlue" BorderThickness="5">
+        <Grid >
+            <Button Content="..." Height="23" HorizontalAlignment="Right" Margin="0,27,12,0" Name="btnHavuzKonum" 
+                VerticalAlignment="Top" Width="44" Click="HavuzKonumTiklandi" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="12,28,0,0" Name="tbHavuzKonum" VerticalAlignment="Top" Width="429" Text="C:\HavuzProjesi\Görsel Arşiv\Kütüphane\YeniHavuzlar\AgirHafifHavuzu" />
+            <ListBox Height="109" HorizontalAlignment="Left" Margin="12,56,0,0" Name="lbKontrolSonucListe" VerticalAlignment="Top" Width="479" />
+            <Label Content="XAML Havuz Oluştuurlacak Klasorun Konumunu" Height="27" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,0,0,0" Name="lHavuzKonum" VerticalAlignment="Top" />
+            <CheckBox Name="chbKombinasyon" Content="Kombinasyonları Oluşturulsun" VerticalAlignment="Bottom" IsChecked="False" Height="27"/>
+        </Grid>
+    </Border>
+</Window>

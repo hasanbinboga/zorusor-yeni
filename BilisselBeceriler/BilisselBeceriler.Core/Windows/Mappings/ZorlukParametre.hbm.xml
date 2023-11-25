@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.ZorlukParametre,BilisselBeceriler.Entities" table="ZorlukParametre" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="ZorlukAyarRef" column="ZorlukAyarRef" class="ZorlukAyar,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="Ad" type="String" name="Ad" not-null="true" length="80" />
+		<property column="Tip" type="String" name="Tip" not-null="true" length="80" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListPlanSoruTurZorlukAyarZorlukParametre" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="ZorlukParametreRef"/>
+			<one-to-many class="PlanSoruTurZorlukAyarZorlukParametre,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

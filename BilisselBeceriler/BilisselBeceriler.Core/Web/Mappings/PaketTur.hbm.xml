@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web.PaketTur, BilisselBeceriler.Entities" table="PaketTur" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="Ad" column="Adi" type="string"/>
+    <property name="BirimFiyat" column="BirimFiyati" type="decimal"/>
+    <many-to-one name="YasGrubu" column="YasGrubu" class="GenelAyarlar"  />
+    <property name="AktifMi" column="AktifMi" type="bool"/>
+  </class>
+</hibernate-mapping>

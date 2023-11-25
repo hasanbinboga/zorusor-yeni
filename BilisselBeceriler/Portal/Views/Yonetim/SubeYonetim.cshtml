@@ -1,0 +1,61 @@
+﻿@model BilisselBeceriler.Entities.Okul
+@{
+    ViewBag.Title = "Şube Yönetim";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<style type="text/css">
+    td
+    {
+        text-align: left;
+    }
+</style>
+<table>
+    <tr>
+        <td>
+            Adı
+        </td>
+        <td>
+            @Model.Adi
+        </td>
+    </tr>
+    <tr>
+        <td>
+            EMail
+        </td>
+        <td>
+            @Model.EPostaAdresi
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Web
+        </td>
+        <td>
+            @Model.WebAdresi
+        </td>
+    </tr>
+    <tr>
+        <td>
+            İl
+        </td>
+        <td>
+            @Model.Il.Adi
+        </td>
+    </tr>
+    <tr>
+        <td>
+            İl
+        </td>
+        <td>
+            @Model.Adresi
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Kurum
+        </td>
+        <td>
+        </td>
+    </tr>
+    <img src="@Url.Action("Images", "Image", new { Id = 1 })" alt="Logo" width="32" height="32" />
+</table>

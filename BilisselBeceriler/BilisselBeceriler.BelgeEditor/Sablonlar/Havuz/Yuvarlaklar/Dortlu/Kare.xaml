@@ -1,0 +1,50 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+mc:Ignorable="d"  Tag="BilisselBeceriler.BelgeEditor.Library.Types.HavuzProccesor" Width="200" Height="200">
+	<Grid.RowDefinitions>
+		<RowDefinition Height="0.025*"/>
+		<RowDefinition Height="0.4765*"/>
+		<RowDefinition Height="0.4765*"/>
+		<RowDefinition Height="0.025*"/>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="0.025*"/>
+		<ColumnDefinition Width="0.4765*"/>
+		<ColumnDefinition Width="0.4765*"/>
+		<ColumnDefinition Width="0.025*"/>
+	</Grid.ColumnDefinitions>
+	<Grid d:LayoutOverrides="Width, Height" Panel.ZIndex="-2" Grid.Column="1" Grid.Row="1">
+		<Ellipse Tag="ArkaPlan" Fill="White" d:LayoutOverrides="Margin">
+			<Ellipse.Effect>
+				<DropShadowEffect Direction="317" BlurRadius="14" ShadowDepth="3"/>
+			</Ellipse.Effect>
+		</Ellipse>
+		<Ellipse d:LayoutOverrides="Margin"/>
+	</Grid>
+	<Grid Grid.Column="2" d:LayoutOverrides="Height" Grid.Row="1">
+		<Ellipse Tag="ArkaPlan" Fill="White" d:LayoutOverrides="Margin">
+			<Ellipse.Effect>
+				<DropShadowEffect Direction="317" BlurRadius="14" ShadowDepth="3"/>
+			</Ellipse.Effect>
+		</Ellipse>
+		<Ellipse d:LayoutOverrides="Margin"/>
+	</Grid>
+	<Grid d:LayoutOverrides="Width, Height" Grid.Column="2" Grid.Row="2">
+		<Ellipse Tag="ArkaPlan" Fill="White">
+			<Ellipse.Effect>
+				<DropShadowEffect Direction="317" BlurRadius="14" ShadowDepth="3"/>
+			</Ellipse.Effect>
+		</Ellipse>
+		<Ellipse/>
+	</Grid>
+	<Grid d:LayoutOverrides="Width, Height" Panel.ZIndex="-1" Grid.Row="2" Grid.Column="1">
+		<Ellipse Tag="ArkaPlan" Fill="White" d:LayoutOverrides="Margin">
+			<Ellipse.Effect>
+				<DropShadowEffect Direction="317" BlurRadius="14" ShadowDepth="3"/>
+			</Ellipse.Effect>
+		</Ellipse>
+		<Ellipse d:LayoutOverrides="Margin"/>
+	</Grid>
+</Grid>

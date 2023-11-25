@@ -1,0 +1,207 @@
+﻿<my:FloatingWindow x:Class="BilisselBeceriler.BelgeEditor.Views.ResimEditorView"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:Converters="clr-namespace:BilisselBeceriler.BelgeEditor.Library.Converters;assembly=BilisselBeceriler.BelgeEditor.Library"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:my="clr-namespace:SilverFlow.Controls;assembly=SilverFlow.Controls"
+                   Width="878"
+                   Title="Resim Editörü"
+                   Height="365"
+                   mc:Ignorable="d">
+    <Border
+            Margin="2"
+            BorderBrush="SkyBlue"
+            BorderThickness="1">
+        <Grid Margin="0" Background="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="42" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="263" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0"
+                    Grid.ColumnSpan="5"
+                    Margin="2"
+                    BorderBrush="SkyBlue"
+                    BorderThickness="0,0,0,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="265" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="5,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                        <Button Click="YeniSablonClicked"
+                                ToolTip="Yeni Şablon Oluştur">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/YeniBelge.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonKaydetClicked"
+                                ToolTip="Şablon Kaydet">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/SayiEkle.png" />
+                            </Button.Content>
+                        </Button>
+                        <Border Width="3" Margin="3,0,0,0" Background="Blue">
+                        </Border>
+                        
+                        <Button Margin="3,0,0,0"
+                                Click="SablonKopyalaClicked"
+                                ToolTip="Şablon Kopyala">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonTasiClicked"
+                                ToolTip="Şablon Taşı">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonAdlandirClicked"
+                                ToolTip="Şablonu Yeniden Adlandır">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Border Width="3" Margin="3,0,0,0" Background="Blue">
+                        </Border>
+                        <Button Margin="3,0,0,0"
+                                Click="SablonSilClicked"
+                                ToolTip="Şablonu Sil">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Margin="10,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                        <Button Click="YeniSablonClicked"
+                                ToolTip="Yeni Alan Ekle">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/YeniBelge.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonKaydetClicked"
+                                ToolTip="Resim alanı döndür">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/SayiEkle.png" />
+                            </Button.Content>
+                        </Button>
+                        <Border Width="3" Margin="3,0,0,0" Background="Blue">
+                        </Border>
+
+                        <Button Margin="3,0,0,0"
+                                Click="SablonKopyalaClicked"
+                                ToolTip="Resim Alanı Ölçekle">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonTasiClicked"
+                                ToolTip="Resim Alanı Kaydır">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="SablonAdlandirClicked"
+                                ToolTip="Şablonu Yeniden Adlandır">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                        <Border Width="3" Margin="3,0,0,0" Background="Blue">
+                        </Border>
+                        <Button Margin="3,0,0,0"
+                                Click="SablonSilClicked"
+                                ToolTip="Şablonu Sil">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <TreeView x:Name="foldersItem"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Background="#FFFFFFFF"
+                      BorderBrush="#FFFFFFFF"
+                      Foreground="#FFFFFFFF"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      SelectedItemChanged="FoldersItemSelectedItemChanged">
+                <TreeView.Resources>
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="HeaderTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <StackPanel Margin="2" Orientation="Horizontal">
+                                        <Image Name="img"
+                                               Width="16"
+                                               Height="16"
+                                               Source="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                               AncestorType={x:Type TreeViewItem}},
+                                                                Path=Header,
+                                                                Converter={x:Static Converters:HeaderToImageConverter.Instance}}"
+                                               Stretch="None" />
+                                        <TextBlock Margin="5,0" Text="{Binding}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TreeView.Resources>
+            </TreeView>
+            <Border Grid.Row="2"
+                    Grid.ColumnSpan="5"
+                    Margin="2"
+                    BorderBrush="SkyBlue"
+                    BorderThickness="0,1,0,0">
+                <TextBlock Name="tbMesaj" Text="" />
+            </Border>
+            
+            <Border Grid.Row="1" Grid.Column="2" Background="White">
+                <Canvas>
+                </Canvas>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="4" Background="White">
+                <Canvas>
+                </Canvas>
+            </Border>
+
+            <GridSplitter Grid.Row="1"
+                          Grid.Column="1"
+                          Width="3"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Stretch" />
+            <GridSplitter Grid.Row="1"
+                          Grid.Column="3"
+                          Width="3"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Stretch" />
+        </Grid>
+
+    </Border>
+</my:FloatingWindow>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.VaryansFigur,BilisselBeceriler.Entities" table="VaryansFigur" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="assigned"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="VaryansRef" column="VaryansRef" class="Varyans,BilisselBeceriler.Entities" />
+
+		<many-to-one name="FigurRef" column="FigurRef" class="Figur,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		
+	</class>
+</hibernate-mapping>

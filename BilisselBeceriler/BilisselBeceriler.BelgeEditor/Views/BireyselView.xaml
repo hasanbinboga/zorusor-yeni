@@ -1,0 +1,37 @@
+﻿<my:FloatingWindow x:Class="BilisselBeceriler.BelgeEditor.Views.BireyselView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:my="clr-namespace:SilverFlow.Controls;assembly=SilverFlow.Controls"
+                   Width="510"
+                   Height="440"
+                   mc:Ignorable="d" Loaded="FloatingWindowLoaded">
+    <my:FloatingWindow.Resources>
+        <DataTemplate x:Key="ImageGalleryDataTemplate">
+            <Grid>
+                <Border Width="{Binding Width}"
+                        Height="{Binding Hidth}"
+                        Margin="3"
+                        BorderBrush="#444"
+                        BorderThickness="1"
+                        CornerRadius="2"
+                        Padding="1">
+                    <Image HorizontalAlignment="Center"
+                           PreviewMouseLeftButtonDown="ImagePreviewMouseLeftButtonDown"
+                           Source="{Binding Path}"
+                           ToolTip="{Binding ToolTip}"
+                           Stretch="Uniform"/>
+                </Border>
+            </Grid>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="ImageGalleryItemsPanelTemplate">
+            <UniformGrid Name="ugResimKapsul" Columns="5" Rows="7"
+                       PreviewMouseLeftButtonDown="ImagePreviewMouseLeftButtonDown" />
+        </ItemsPanelTemplate>
+    </my:FloatingWindow.Resources>
+        <ListBox x:Name="lstImageGallery"
+                 ItemsPanel="{DynamicResource ImageGalleryItemsPanelTemplate}"
+                 ItemsSource="{Binding}"
+                 ItemTemplate="{DynamicResource ImageGalleryDataTemplate}"/>
+</my:FloatingWindow>

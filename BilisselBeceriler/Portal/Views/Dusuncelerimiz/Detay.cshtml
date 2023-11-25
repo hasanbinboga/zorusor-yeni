@@ -1,0 +1,21 @@
+﻿@using BilisselBeceriler.Portal.Helpers
+@model BilisselBeceriler.Entities.Dusunce
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="icerikkpsul" style="height: auto;">
+    <div class="icerik" style="margin-left: 30px; text-align: justify;">
+        <div class="jfontsizekapsul" style="text-align: right">
+            <a id="jfontsize-minus" class="jfontsize-button" href="#">A-</a> <a id="jfontsize-default"
+                class="jfontsize-button" href="#">A</a> <a id="jfontsize-plus" href="#" class="jfontsize-button">
+                    A+</a>
+        </div>
+        <div id="wrapper">
+            <h3>
+                @Model.Baslik
+            </h3>
+            @Html.Raw(Html.Clear(Model.Icerik));
+        </div>
+    </div>
+</div>

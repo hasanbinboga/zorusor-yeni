@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.SoruTur,BilisselBeceriler.Entities" table="SoruTur" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+      <generator class="native"></generator>
+		</id>
+		
+		<!-- Properties -->
+		<property column="Ad" type="String" name="Ad" not-null="true" length="80" />
+		<property column="Aciklama" type="String" name="Aciklama" length="2147483647" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListPlanSoruTur" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="SoruTurRef"/>
+			<one-to-many class="PlanSoruTur,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListSoru" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="SoruTurRef"/>
+			<one-to-many class="Soru,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListSoruTurHavuz" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="SoruTurRef"/>
+			<one-to-many class="SoruTurHavuz,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListSoruTurSoruSablon" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="SoruTurRef"/>
+			<one-to-many class="SoruTurSoruSablon,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListSoruTurZorlukAyar" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="SoruTurRef"/>
+			<one-to-many class="SoruTurZorlukAyar,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

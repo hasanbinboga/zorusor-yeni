@@ -1,0 +1,170 @@
+﻿<my:FloatingWindow x:Class="BilisselBeceriler.BelgeEditor.Views.BelgeSablonView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:Converters="clr-namespace:BilisselBeceriler.BelgeEditor.Library.Converters;assembly=BilisselBeceriler.BelgeEditor.Library"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:my="clr-namespace:SilverFlow.Controls;assembly=SilverFlow.Controls"
+                   Width="480"
+                   Height="400"
+                   Title="Belge Editörü"
+                   mc:Ignorable="d">
+    <my:FloatingWindow.Resources>
+        <DataTemplate x:Key="BelgeGalleryDataTemplate">
+            <Grid>
+                <Border Width="200"
+                        Height="283"
+                        Margin="10"
+                        BorderBrush="#444"
+                        BorderThickness="1"
+                        CornerRadius="5"
+                        Padding="5"
+                        ToolTip="{Binding Path=Name}" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown">
+                    <Border.Background>
+                        <VisualBrush Stretch="Uniform" TileMode="None">
+                            <VisualBrush.Visual>
+                                <ContentControl Content="{Binding Path=ContainerObject}" />
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Border.Background>
+                </Border>
+            </Grid>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="BelgeGalleryItemsPanelTemplate">
+            <UniformGrid Name="ugResimKapsul"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Stretch"
+                         Columns="1" />
+        </ItemsPanelTemplate>
+    </my:FloatingWindow.Resources>
+    <Border
+            Margin="2"
+            BorderBrush="SkyBlue"
+            BorderThickness="1">
+        <Grid Margin="0" Background="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="42" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Margin="2"
+                    BorderBrush="SkyBlue"
+                    BorderThickness="0,0,0,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <Label Margin="0,6,5,6"
+                               VerticalAlignment="Center"
+                               Content="Sayı :" />
+                        <TextBox Name="txtSayi"
+                                 Width="40"
+                                 Margin="0,6,5,6" />
+                        <Label Margin="0,6,5,6"
+                               VerticalAlignment="Center"
+                               Content="Açıklama:" />
+                        <TextBox Name="txtAciklama"
+                                 Width="105"
+                                 Margin="0,6,5,6" />
+                        <Button Margin="0,2,5,2"
+                                Click="SayiOlusturClick"
+                                ToolTip="Oluştur">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/SayiEkle.png" />
+                            </Button.Content>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                        <Button
+                                Margin="5,0,0,0"
+                                Click="ErkekBelgeKaydetClick"
+                                ToolTip="Erkek için Kaydet">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviErkek.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="KadinBelgeKaydetClick"
+                                ToolTip="Kız için Kaydet">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviKadin.png" />
+                            </Button.Content>
+                        </Button>
+                        <Button Margin="5,0,0,0"
+                                Click="BelgeKaydetClick"
+                                ToolTip="Genel Belge Kaydet">
+                            <Button.Content>
+                                <Image Source="/BilisselBeceriler.BelgeEditor;component/Images/MaviGenel.png" />
+                            </Button.Content>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <GridSplitter Grid.Row="1"
+                          Grid.Column="1"
+                          Width="3"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Stretch" />
+            <TreeView x:Name="foldersItem"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Background="#FFFFFFFF"
+                      BorderBrush="#FFFFFFFF"
+                      Foreground="#FFFFFFFF"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      SelectedItemChanged="FoldersItemSelectedItemChanged" FontSize="14">
+                <TreeView.Resources>
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="HeaderTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <StackPanel Margin="2" Orientation="Horizontal">
+                                        <Image Name="img"
+                                               Width="16"
+                                               Height="16"
+                                               Source="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                               AncestorType={x:Type TreeViewItem}},
+                                                                Path=Header,
+                                                                Converter={x:Static Converters:HeaderToImageConverter.Instance}}"
+                                               Stretch="None" />
+                                        <TextBlock Margin="5,0" Text="{Binding}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TreeView.Resources>
+            </TreeView>
+            <ListBox x:Name="lstBelgeGallery"
+                     Grid.Row="1"
+                     Grid.Column="2"
+                     ItemsPanel="{DynamicResource BelgeGalleryItemsPanelTemplate}"
+                     ItemsSource="{Binding}"
+                     ItemTemplate="{DynamicResource BelgeGalleryDataTemplate}" />
+            <Border Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Margin="2"
+                    BorderBrush="SkyBlue"
+                    BorderThickness="0,1,0,0">
+                <TextBlock Name="tbMesaj" Text="" />
+            </Border>
+        </Grid>
+    </Border>
+</my:FloatingWindow>

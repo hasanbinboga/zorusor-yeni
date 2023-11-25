@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0B20B03-0AE1-4811-9907-8CB066C3945C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BilisselBeceriler.BelgeEditor.Library</RootNamespace>
+    <AssemblyName>BilisselBeceriler.BelgeEditor.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="SilverFlow.Controls">
+      <HintPath>..\ExternalReferences\SilverFlow.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\DirectoryNameConstants.cs" />
+    <Compile Include="Constants\PathNameConstants.cs" />
+    <Compile Include="Constants\TagNameConstants.cs" />
+    <Compile Include="Controls\ucPageSetup.xaml.cs">
+      <DependentUpon>ucPageSetup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\DocumentPagePageToBorder.cs" />
+    <Compile Include="Converters\HeaderToImageConverter.cs" />
+    <Compile Include="Converters\NegateConverter.cs" />
+    <Compile Include="Converters\PrinterToPageSizesConverter.cs" />
+    <Compile Include="Converters\XPSesToOneXPS.cs" />
+    <Compile Include="Converters\XPStoPDF.cs" />
+    <Compile Include="Enums\Cinsiyet.cs" />
+    <Compile Include="Enums\FotografTip.cs" />
+    <Compile Include="Enums\ResimTur.cs" />
+    <Compile Include="Enums\ResimZorlukTur.cs" />
+    <Compile Include="Enums\YasGrubu.cs" />
+    <Compile Include="Extensions\ExtensionService.cs" />
+    <Compile Include="Helpers\AntetHelper.cs" />
+    <Compile Include="Helpers\BelgeUretHelper.cs" />
+    <Compile Include="Helpers\ImageBrushHelper.cs" />
+    <Compile Include="Helpers\PageRangeDocumentPaginator.cs" />
+    <Compile Include="Helpers\PrintHelper.cs" />
+    <Compile Include="Helpers\RandomHelper.cs" />
+    <Compile Include="Helpers\SayfaHelper.cs" />
+    <Compile Include="Helpers\SayfaNoHelper.cs" />
+    <Compile Include="Helpers\VisualBrushHelper.cs" />
+    <Compile Include="Helpers\XamlHelper.cs" />
+    <Compile Include="Model\BelgeEntity.cs" />
+    <Compile Include="Model\BelgeSablonEntity.cs" />
+    <Compile Include="Model\BireyselEntity.cs" />
+    <Compile Include="Model\FolderEntity.cs" />
+    <Compile Include="Model\BaseEntity.cs" />
+    <Compile Include="Model\HavuzSablonEntity.cs" />
+    <Compile Include="Model\ImageEntity.cs" />
+    <Compile Include="Model\SayfaSablonEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\ucBelgeViewer.xaml.cs">
+      <DependentUpon>ucBelgeViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service\FolderService.cs" />
+    <Compile Include="Service\IFolderService.cs" />
+    <Compile Include="Enums\BelgeTur.cs" />
+    <Compile Include="Types\BellekGuclendirmeRefResProcessor.cs" />
+    <Compile Include="Types\BellekGuclendirmeSoruProcessor.cs" />
+    <Compile Include="Types\Common.cs" />
+    <Compile Include="Enums\DragState.cs" />
+    <Compile Include="Types\HavuzProccesor.cs" />
+    <Compile Include="Types\KupProcessor.cs" />
+    <Compile Include="Types\OruntuProcessor.cs" />
+    <Compile Include="Types\ProcessorTemplate.cs" />
+    <Compile Include="Types\OnKapakProcessor.cs" />
+    <Compile Include="Types\SiralamaSoruProcessor.cs" />
+    <Compile Include="Types\StandartSoruProcessor.cs" />
+    <Compile Include="Types\TransparentBireyselHavuzProcessor.cs" />
+    <Compile Include="Types\TransparentHavuzProcessor.cs" />
+    <Compile Include="Types\XPSOlusturArgs.cs" />
+    <Compile Include="Views\ShapeEditView.xaml.cs">
+      <DependentUpon>ShapeEditView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ucPageSetup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ucBelgeViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShapeEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilisselBeceriler.Core\BilisselBeceriler.Entities.csproj">
+      <Project>{A218F73A-2F11-4469-A995-54A22EAC70C3}</Project>
+      <Name>BilisselBeceriler.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Data\BilisselBeceriler.Data.csproj">
+      <Project>{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}</Project>
+      <Name>BilisselBeceriler.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

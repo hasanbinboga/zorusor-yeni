@@ -1,0 +1,128 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+mc:Ignorable="d" Width="793" Height="1123" Background="White">
+	<Grid Margin="40,30,30,30">
+		<Grid>
+			<Grid.Effect>
+				<DropShadowEffect BlurRadius="10" ShadowDepth="8"/>
+			</Grid.Effect>
+			<Grid.Background>
+                <ImageBrush ImageSource="C:\HavuzProjesi\Resimler\Kapak\36Ay\On\01.png"/>
+			</Grid.Background>
+			<Grid x:Name="DergiBilgi" Margin="0,100,0,0" VerticalAlignment="Top">
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="Yayın Tarihi :"
+						Foreground="White" LineHeight="1.333" Margin="0,2,5,0" FontSize="9.333"/>
+					<TextBlock x:Name="txbYayinTarih" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="15 Ağustos 2011"
+						Foreground="White" LineHeight="1.333" Margin="0,2,20,0" FontSize="9.333"/>
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="Sayı :"
+						Foreground="White" LineHeight="1.333" Margin="0,2,5,0" FontSize="9.333"/>
+					<TextBlock x:Name="txbDergiSayi" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="1"
+						Foreground="White" LineHeight="1.333" Margin="0,2,20,0" FontSize="9.333"/>
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="Seri No :"
+						Foreground="White" LineHeight="1.333" Margin="0,2,5,0" FontSize="9.333"/>
+					<TextBlock x:Name="txbSeriNo" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" 
+						Text="FF1E3B74"
+						Foreground="White" LineHeight="1.333" FontSize="9.333" Margin="0,2,0,0"/>
+				</StackPanel>
+			</Grid>
+			<Grid x:Name="DergiBaslik" Height="222" Margin="0,159,0,0" VerticalAlignment="Top">
+				<StackPanel Orientation="Vertical" d:LayoutOverrides="Height">
+					<TextBlock TextWrapping="Wrap" Text="36. AY VE SONRASI" FontSize="21.333" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White">
+						<TextBlock.Effect>
+							<DropShadowEffect BlurRadius="7" ShadowDepth="4" RenderingBias="Quality"/>
+						</TextBlock.Effect>
+					</TextBlock>
+					<TextBlock TextWrapping="Wrap" Text="BİREYE ÖZEL ALIŞTIRMA KİTABI" FontSize="26.667" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White">
+						<TextBlock.Effect>
+							<DropShadowEffect BlurRadius="7" ShadowDepth="4" RenderingBias="Quality"/>
+						</TextBlock.Effect>
+					</TextBlock>
+					<TextBlock x:Name="CocukAd" TextWrapping="Wrap" Text="MEHMET FAHRİ KARABABA" FontSize="48" TextAlignment="Center" FontWeight="ExtraBold" FontFamily="Arial Black" Margin="0,2,0,0">
+						<TextBlock.Effect>
+							<DropShadowEffect BlurRadius="7" ShadowDepth="4" RenderingBias="Quality"/>
+						</TextBlock.Effect>
+						<TextBlock.Foreground>
+							<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+								<GradientStop Color="White" Offset="0.211"/>
+								<GradientStop Color="#FF9D9EE7" Offset="0.483"/>
+								<GradientStop Color="White" Offset="0.66"/>
+							</LinearGradientBrush>
+						</TextBlock.Foreground>
+					</TextBlock>
+		
+				</StackPanel>
+			</Grid>
+			<Grid x:Name="CocukFoto" d:LayoutOverrides="Width, Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,323">
+				<Border Height="390" Width="350">
+					<Border.Background>
+                        <ImageBrush ImageSource="C:\HavuzProjesi\Resimler\CocukFoto\Bizimkiler\KapakCocuk.png"/>
+					</Border.Background>
+					<Border.BorderBrush>
+						<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+							<GradientStop Color="#FF3D70D6" Offset="0.35"/>
+							<GradientStop Color="#FFC3E0ED" Offset="1"/>
+							<GradientStop Color="#FF1E3B74" Offset="0.65"/>
+							<GradientStop Color="#FFE3EAED" Offset="0.032"/>
+						</LinearGradientBrush>
+					</Border.BorderBrush>
+				</Border>
+			</Grid>
+			<Grid x:Name="DogumTarih" Margin="0,0,0,293" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+				<TextBlock TextWrapping="Wrap" Text="15/05/2006" FontSize="18.667" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" Width="130.2" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width">
+					<TextBlock.Effect>
+						<DropShadowEffect BlurRadius="7" ShadowDepth="4" RenderingBias="Quality"/>
+					</TextBlock.Effect>
+				</TextBlock>
+			</Grid>
+			<Grid x:Name="OkulBilgi" VerticalAlignment="Bottom" Margin="0,0,0,153.5" HorizontalAlignment="Center">
+				<StackPanel Orientation="Vertical" d:LayoutOverrides="Height">
+					<Border Width="450" Height="100" d:LayoutOverrides="Height">
+						<Border.Background>
+                            <ImageBrush ImageSource="C:\HavuzProjesi\Resimler\AnaOkulu\KapakLogo\Logo.PNG" Stretch="Uniform"/>
+						</Border.Background>
+					</Border>
+					<Grid>
+						<TextBlock Text="Özel Çiğdem Taşlıdan Anaokulu Web Adresi: www.cigdemtaslidan.com.tr  E-posta: info@cigdemtaslidan.com.tr" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" LineHeight="1.333" FontSize="12" d:LayoutOverrides="Height" Width="450"><TextBlock.Effect>
+								<DropShadowEffect BlurRadius="3" ShadowDepth="1" RenderingBias="Quality"/>
+							</TextBlock.Effect></TextBlock>
+					</Grid>
+				</StackPanel>
+			</Grid>
+			<Grid x:Name="Hocalar" Margin="0,0,0,70.5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="500">
+				<Grid HorizontalAlignment="Left">
+					<StackPanel Orientation="Vertical" d:LayoutOverrides="Height">
+						<TextBlock Text="BİLİŞSEL TASARIM" TextWrapping="Wrap" FontSize="9.333" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" LineHeight="1.333" TextDecorations="Underline"><TextBlock.Effect>
+								<DropShadowEffect BlurRadius="3" ShadowDepth="1" RenderingBias="Quality"/>
+							</TextBlock.Effect></TextBlock>
+						<TextBlock Text="Sebahattin DİLAVER" TextWrapping="Wrap" FontSize="16" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" LineHeight="1.333"><TextBlock.Effect>
+								<DropShadowEffect BlurRadius="3" ShadowDepth="1" RenderingBias="Quality"/>
+							</TextBlock.Effect></TextBlock>
+					</StackPanel>
+				</Grid>
+				<Grid HorizontalAlignment="Right">
+					<StackPanel Margin="0,0,0,-0.001" Orientation="Vertical" d:LayoutOverrides="Height">
+						<TextBlock Text="GÖRSEL TASARIM" TextWrapping="Wrap" FontSize="9.333" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" LineHeight="1.333" TextDecorations="Underline"><TextBlock.Effect>
+								<DropShadowEffect BlurRadius="3" ShadowDepth="1" RenderingBias="Quality"/>
+							</TextBlock.Effect></TextBlock>
+						<TextBlock Text="Ruhi KAVASOĞLU" TextWrapping="Wrap" FontSize="16" TextAlignment="Center" FontWeight="Bold" FontFamily="Segoe Print" Foreground="White" LineHeight="1.333"><TextBlock.Effect>
+								<DropShadowEffect BlurRadius="3" ShadowDepth="1" RenderingBias="Quality"/>
+							</TextBlock.Effect></TextBlock>
+					</StackPanel>
+				</Grid>
+			</Grid>
+			<StackPanel x:Name="Altyazi" VerticalAlignment="Bottom" Margin="0,0,0,26.5">
+				<Grid Height="12.65">
+					<TextBlock Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 30 Ağustos 2011" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Arial" Foreground="White" LineHeight="1.333" FontSize="11" d:LayoutOverrides="Height"/>
+				</Grid>
+			</StackPanel>
+		</Grid>
+	</Grid>
+</Grid>

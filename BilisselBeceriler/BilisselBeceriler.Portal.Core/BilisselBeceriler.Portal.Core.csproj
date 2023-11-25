@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BilisselBeceriler.Portal.Core</RootNamespace>
+    <AssemblyName>BilisselBeceriler.Portal.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\ExternalReferences\Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\ExternalReferences\Unity\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\YetkiControl.cs" />
+    <Compile Include="Controllers\AnasayfaController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DusuncelerimizController.cs" />
+    <Compile Include="Controllers\FiyatlarController.cs" />
+    <Compile Include="Controllers\IletisimController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Controllers\KurumsalController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\OgrenciController.cs" />
+    <Compile Include="Controllers\ProjeController.cs" />
+    <Compile Include="Controllers\OkulController.cs" />
+    <Compile Include="Controllers\SinifController.cs" />
+    <Compile Include="Controllers\UrunlerController.cs" />
+    <Compile Include="Controllers\YonetimController.cs" />
+    <Compile Include="Helpers\HtmlHelpers.cs" />
+    <Compile Include="Unity\IContainerAccessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestController.cs" />
+    <Compile Include="Unity\UnityControllerFactory.cs" />
+    <Compile Include="Controllers\ControllerExtensions.cs" />
+    <Compile Include="Controllers\ImageResult.cs" />
+    <Compile Include="Utility\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilisselBeceriler.Core\BilisselBeceriler.Entities.csproj">
+      <Project>{A218F73A-2F11-4469-A995-54A22EAC70C3}</Project>
+      <Name>BilisselBeceriler.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Data\BilisselBeceriler.Data.csproj">
+      <Project>{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}</Project>
+      <Name>BilisselBeceriler.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Utility\BilisselBeceriler.Utility.csproj">
+      <Project>{2FEB34AB-D9B8-4054-9574-136B3B389B01}</Project>
+      <Name>BilisselBeceriler.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.BelgeTurYasGrup,BilisselBeceriler.Entities" table="BelgeTurYasGrup" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="BelgeTurRef" column="BelgeTurRef" class="BelgeTur,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="YasGrupRef" type="Int64" name="YasGrupRef" not-null="true" />
+		<property column="StandartSayfaAdet" type="Int32" name="StandartSayfaAdet" not-null="true" />
+		
+	</class>
+</hibernate-mapping>

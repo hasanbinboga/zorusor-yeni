@@ -1,0 +1,37 @@
+﻿.Metin
+{
+    font-size: 12pt;
+    color: #aaa;
+    letter-spacing:1px;
+}
+.Metin p
+{
+    color: #888;
+    font-size: 14pt;
+    font-weight: bold;
+}
+#Urunlerimiz
+{
+    margin:10px;
+}
+
+#Urunlerimiz h1
+{
+    font-size:14pt;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#Urunlerimiz h2
+{
+    font-size:12pt;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+#Urunlerimiz h3
+{
+    font-size:12pt;
+    padding-top:5px;
+    padding-bottom:5px;
+}

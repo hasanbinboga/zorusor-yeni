@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web.OgrenciFotograf, BilisselBeceriler.Entities" table="OgrenciFotograf" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <many-to-one name="Ogrenci" column="OgrenciRef"   />
+    <many-to-one name="FotoKategori" column="KategoriRef"  />        
+    <property name="Resim" column="Resim" type="BinaryBlob"/>    
+    <property name="AktifMi" column="AktifMi" type="bool"/>
+  </class>
+</hibernate-mapping>

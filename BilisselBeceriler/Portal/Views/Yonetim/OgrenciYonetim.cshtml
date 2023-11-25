@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BilisselBeceriler.Entities.Web.Ogrenci>
+
+@{
+    ViewBag.Title = "Öğrenci Yönetim";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<table>
+    <tr>
+        <th>
+            Adi
+        </th>
+        <th>
+            Soyadi
+        </th>
+        <th>
+            Cinsiyeti
+        </th>
+        <th>
+            DogumTarih
+        </th>
+        <th>
+            Vesikalik
+        </th>
+        <th>
+            Baslangici
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soyadi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cinsiyeti)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DogumTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vesikalik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Baslangici)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web.Okul, BilisselBeceriler.Entities" table="Okul" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="Adi" column="Adi" type="string"/>
+    <property name="Url" column="Url" type="string"/>
+    <many-to-one name="Il" column="IlRef"  />
+    <property name="Adresi" column="Adresi" type="string"/>
+    <property name="Tel" column="Tel" type="string"/>
+    <property name="WebAdresi" column="WebAdresi" type="string"/>
+    <property name="EPostaAdresi" column="EPostaAdresi" type="string"/>
+    <property name="Logo" column="Logo" type="BinaryBlob"/>
+    <property name="KapakLogo" column="KapakLogo" type="BinaryBlob"/>
+    <property name="AktifMi" column="AktifMi" type="bool"/>
+    <bag name="SinifListe" lazy="true" inverse="true" cascade="All" >
+      <key column="OkulRef" />
+      <one-to-many class="BilisselBeceriler.Entities.Web.Sinif,BilisselBeceriler.Entities"  />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BilisselBeceriler.Portal</RootNamespace>
+    <AssemblyName>BilisselBeceriler.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\ExternalReferences\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\jwplayer\jwplayer.js" />
+    <Content Include="Content\jwplayer\player.swf" />
+    <Content Include="Content\jwplayer\swfobject.js" />
+    <Content Include="Content\nivo-slider\jquery.nivo.slider.pack.js" />
+    <Content Include="Content\nivo-slider\nivo-slider.css" />
+    <Content Include="Content\nivo-slider\themes\default\arrows.png" />
+    <Content Include="Content\nivo-slider\themes\default\bullets.png" />
+    <Content Include="Content\nivo-slider\themes\default\default.css" />
+    <Content Include="Content\nivo-slider\themes\default\loading.gif" />
+    <Content Include="Content\resources\animations\bilisselbeceriler.flv" />
+    <Content Include="Content\resources\animations\bilisselbeceriler.jpg" />
+    <Content Include="Content\resources\animations\bilisselbeceriler.f4v" />
+    <Content Include="Content\resources\animations\rakun.flv" />
+    <Content Include="Content\resources\animations\rakun.jpg" />
+    <Content Include="Content\resources\animations\rakun.f4v" />
+    <Content Include="Content\resources\images\altsol.gif" />
+    <Content Include="Content\resources\images\arkaust.png" />
+    <Content Include="Content\resources\images\bg.gif" />
+    <Content Include="Content\resources\images\bilgi2.png" />
+    <Content Include="Content\resources\images\body-bg.jpg" />
+    <Content Include="Content\resources\images\bullet_delete.png" />
+    <Content Include="Content\resources\images\cross.png" />
+    <Content Include="Content\resources\images\duzelt.png" />
+    <Content Include="Content\resources\images\ekle.png" />
+    <Content Include="Content\resources\images\footer-tail.gif" />
+    <Content Include="Content\resources\images\golge.gif" />
+    <Content Include="Content\resources\images\griguncelle.gif" />
+    <Content Include="Content\resources\images\grioncekisayfa.png" />
+    <Content Include="Content\resources\images\grisonrakisayfa.png" />
+    <Content Include="Content\resources\images\hata.png" />
+    <Content Include="Content\resources\images\header\Basarilarimiz.png" />
+    <Content Include="Content\resources\images\header\Logo.png" />
+    <Content Include="Content\resources\images\header\Okulda Basari 40 yil.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Bireysel Alistirma Kitabi.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Dunyayi Izliyoruz.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Egitm Yaklasim.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Hedef 2015.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Kitap Yelpazesi.jpg" />
+    <Content Include="Content\resources\images\header\Okulda Basari Okumayi Sevme.jpg" />
+    <Content Include="Content\resources\images\a_bg.gif" />
+    <Content Include="Content\resources\images\bg.jpg" />
+    <Content Include="Content\resources\images\big-image.jpg" />
+    <Content Include="Content\resources\images\blank.gif" />
+    <Content Include="Content\resources\images\clean.jpg" />
+    <Content Include="Content\resources\images\contact.jpg" />
+    <Content Include="Content\resources\images\d1.jpg" />
+    <Content Include="Content\resources\images\footer-bg.gif" />
+    <Content Include="Content\resources\images\header\Sunum.png" />
+    <Content Include="Content\resources\images\header\TestOrnekleri.png" />
+    <Content Include="Content\resources\images\icon-check.gif" />
+    <Content Include="Content\resources\images\infoline.png" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda Basari Zihinsel Beceriler.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Butun-Cizimler-Elle-Yapildi.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Buyuk-Fen-Anahtari.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Ilk-Okul-Oncesi-Kitaplar.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Ilk-Soru-Bankasi.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Okul-Oncesinden-Universite-Hazirliga.jpg" />
+    <Content Include="Content\resources\images\KilometreTaslari\Okulda-Basari-Teknoloji-ile-Mukemmelleştirdik.jpg" />
+    <Content Include="Content\resources\images\kitap\36Ay.jpg" />
+    <Content Include="Content\resources\images\kitap\48Ay.jpg" />
+    <Content Include="Content\resources\images\kitap\60Ay.jpg" />
+    <Content Include="Content\resources\images\kitap\72Ay.jpg" />
+    <Content Include="Content\resources\images\link.gif" />
+    <Content Include="Content\resources\images\list-marker1.png" />
+    <Content Include="Content\resources\images\list-marker2.png" />
+    <Content Include="Content\resources\images\list-marker6.gif" />
+    <Content Include="Content\resources\images\logo.png" />
+    <Content Include="Content\resources\images\menu\bg-header.png" />
+    <Content Include="Content\resources\images\menu\bgr-1.jpg" />
+    <Content Include="Content\resources\images\menu\bgr-2.jpg" />
+    <Content Include="Content\resources\images\menu\bgr-3.jpg" />
+    <Content Include="Content\resources\images\menu\bgr-4.jpg" />
+    <Content Include="Content\resources\images\newtech.jpg" />
+    <Content Include="Content\resources\images\nophoto.png" />
+    <Content Include="Content\resources\images\oncekisayfa.png" />
+    <Content Include="Content\resources\images\paketler\bg-blue.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-button-2.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-button-3.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-button-4.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-button-5.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-green.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-orange.jpg" />
+    <Content Include="Content\resources\images\paketler\bg-red.jpg" />
+    <Content Include="Content\resources\images\paketler\UrunButon.jpg" />
+    <Content Include="Content\resources\images\paketler\UrunButon_f2.jpg" />
+    <Content Include="Content\resources\images\pitch-1.jpg" />
+    <Content Include="Content\resources\images\pitch-2.jpg" />
+    <Content Include="Content\resources\images\pitch-3.jpg" />
+    <Content Include="Content\resources\images\pitch-4.jpg" />
+    <Content Include="Content\resources\images\griekle.gif" />
+    <Content Include="Content\resources\images\renkliguncelle.png" />
+    <Content Include="Content\resources\images\ruhi kavasoglu.jpg" />
+    <Content Include="Content\resources\images\search.gif" />
+    <Content Include="Content\resources\images\search.png" />
+    <Content Include="Content\resources\images\searchbg.png" />
+    <Content Include="Content\resources\images\searchbtn.png" />
+    <Content Include="Content\resources\images\bilgi.png" />
+    <Content Include="Content\resources\images\sil.png" />
+    <Content Include="Content\resources\images\small-image.jpg" />
+    <Content Include="Content\resources\images\sonrakisayfa.png" />
+    <Content Include="Content\resources\images\stop.png" />
+    <Content Include="Content\resources\images\Tablo\Var.png" />
+    <Content Include="Content\resources\images\Tablo\Var2.png" />
+    <Content Include="Content\resources\images\Tablo\Yok.png" />
+    <Content Include="Content\resources\images\Tablo\Yok2.png" />
+    <Content Include="Content\resources\images\topnav_active.gif" />
+    <Content Include="Content\resources\images\topnav_stretch.gif" />
+    <Content Include="Content\resources\images\ustsag.gif" />
+    <Content Include="Content\resources\images\grisil.gif" />
+    <Content Include="Content\resources\images\renklisil.gif" />
+    <Content Include="Content\resources\images\Uyari.png" />
+    <Content Include="Content\resources\images\wbg.gif" />
+    <Content Include="Content\Styles\ogrenciliste.css" />
+    <Content Include="Content\Styles\Site.css" />
+    <Content Include="Content\Styles\Metin.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Global.asax" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="HTMLPage2.htm" />
+    <Content Include="Scripts\animate-script.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.bgiframe-2.1.2.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.hoverIntent.minified.js" />
+    <Content Include="Scripts\jquery.jfontsize-1.0.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.dialog.js" />
+    <Content Include="Scripts\jquery.ui.draggable.js" />
+    <Content Include="Scripts\jquery.ui.mouse.js" />
+    <Content Include="Scripts\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery.ui.resizable.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\ogrenciyonetim.js" />
+    <Content Include="Scripts\superfish.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\resources\pps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Anasayfa\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Urunler\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Urunler\projeksiyonetkinlik.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Urunler\gunlukbireyselalistirma.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Urunler\bireyselalistirmakitabi.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Urunler\alistirmaolusturma.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fiyatlar\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Kurumsal\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Kurumsal\Eserlerimiz.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Kurumsal\KilometreTaslarimiz.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Kurumsal\Hedeflerimiz.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Iletisim\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\resources\pdf\Basarilarimiz.pdf" />
+    <None Include="Content\resources\pdf\BilisselBeceriler.pdf" />
+    <None Include="Content\resources\pdf\HUSEYINOMERBINBOGA.pdf" />
+    <None Include="Content\resources\pdf\MERTDILAVER.pdf" />
+    <Content Include="Views\Fiyatlar\OtuzAltiAySonrasi.cshtml" />
+    <Content Include="Views\Fiyatlar\KirkSekizAySonrasi.cshtml" />
+    <Content Include="Views\Fiyatlar\AltmisAySonrasi.cshtml" />
+    <Content Include="Views\Fiyatlar\YetmisIkiAySonrasi.cshtml" />
+    <Content Include="Views\Urunler\alistirmaolusturma36.cshtml" />
+    <Content Include="Views\Urunler\alistirmaolusturma48.cshtml" />
+    <Content Include="Views\Urunler\alistirmaolusturma60.cshtml" />
+    <Content Include="Views\Urunler\alistirmaolusturma72.cshtml" />
+    <Content Include="Views\Urunler\projeksiyonetkinlik36.cshtml" />
+    <Content Include="Views\Urunler\projeksiyonetkinlik48.cshtml" />
+    <Content Include="Views\Urunler\projeksiyonetkinlik60.cshtml" />
+    <Content Include="Views\Urunler\projeksiyonetkinlik72.cshtml" />
+    <Content Include="Views\Urunler\gunlukbireyselalistirma36.cshtml" />
+    <Content Include="Views\Urunler\gunlukbireyselalistirma48.cshtml" />
+    <Content Include="Views\Urunler\gunlukbireyselalistirma60.cshtml" />
+    <Content Include="Views\Urunler\gunlukbireyselalistirma72.cshtml" />
+    <Content Include="Views\Urunler\bireyselalistirmakitabi36.cshtml" />
+    <Content Include="Views\Urunler\bireyselalistirmakitabi48.cshtml" />
+    <Content Include="Views\Urunler\bireyselalistirmakitabi60.cshtml" />
+    <Content Include="Views\Urunler\bireyselalistirmakitabi72.cshtml" />
+    <None Include="Content\resources\pdf\OkuldaBasarininSirlari.pdf" />
+    <None Include="Content\resources\pdf\OMERYALCINTAS.pdf" />
+    <None Include="Content\resources\pdf\SELAHCEMALI.pdf" />
+    <Content Include="Views\Proje\Index.cshtml" />
+    <Content Include="Views\Yonetim\Index.cshtml" />
+    <Content Include="Views\Shared\_Yonetim.cshtml" />
+    <Content Include="Views\Yonetim\SubeYonetim.cshtml" />
+    <Content Include="Views\Yonetim\SinifYonetim.cshtml" />
+    <Content Include="Views\Yonetim\OgrenciYonetim.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Test\x.cshtml" />
+    <None Include="Content\resources\pdf\TestOrnekleri.pdf" />
+    <Content Include="Views\Dusuncelerimiz\Index.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\Detay.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\Kayit.cshtml" />
+    <Content Include="Views\Yonetim\PortalZiyaretIstatistik.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\BilisselBecerilerveZeka.cshtml" />
+    <Content Include="Views\Yonetim\SubeListe.cshtml" />
+    <Content Include="Views\Okul\Detay.cshtml" />
+    <Content Include="Views\Sinif\Index.cshtml" />
+    <Content Include="Views\Ogrenci\Liste.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\BasariyiEngelleyenEtkenler.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\BilisselBecerilerinFaydalari.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\DundenBugune.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\KompozisyonYazmakveZihinselBeceriler.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\KonusanMatematikProblemlerinideCozer.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\SaygidegerOgretmenlerimiz.cshtml" />
+    <Content Include="Views\Dusuncelerimiz\SayinAnnelerSayinBabalar.cshtml" />
+    <Content Include="Views\Yonetim\ZiyaretciIstatistik.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilisselBeceriler.Core\BilisselBeceriler.Entities.csproj">
+      <Project>{A218F73A-2F11-4469-A995-54A22EAC70C3}</Project>
+      <Name>BilisselBeceriler.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Data\BilisselBeceriler.Data.csproj">
+      <Project>{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}</Project>
+      <Name>BilisselBeceriler.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Portal.Core\BilisselBeceriler.Portal.Core.csproj">
+      <Project>{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}</Project>
+      <Name>BilisselBeceriler.Portal.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1182</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

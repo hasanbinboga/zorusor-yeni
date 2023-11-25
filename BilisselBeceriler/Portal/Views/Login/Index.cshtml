@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Kullanıcı Girişi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .logintablo
+    {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td input
+    {
+        width: 150px;
+    }
+</style>
+<div class="icerikkpsul" style="height: 500px;">
+    <div class="icerik">
+        @if (string.IsNullOrEmpty(ViewBag.Mesaj) == false)
+        {
+            <table class="logintablo" style="margin-top:50px; color:#f00">
+                <tr>
+                    <td>
+                        @ViewBag.Mesaj
+                    </td>
+                </tr>
+            </table>
+        }
+        @using (Html.BeginForm())
+        {            
+            <table class="logintablo">
+                <tr>
+                    <td colspan="2">
+                        KULLANICI GİRİŞİ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Mail
+                    </td>
+                    <td>
+                        @Html.TextBox("tbMail", string.Empty)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Şifre
+                    </td>
+                    <td>
+                        @Html.Password("tbSifre", string.Empty)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right">
+                        <input name="iLogin" id="iLogin" type="submit" value="Giriş" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

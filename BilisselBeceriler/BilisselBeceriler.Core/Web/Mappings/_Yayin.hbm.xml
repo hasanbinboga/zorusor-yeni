@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="BilisselBeceriler.Entities.Web" assembly="BilisselBeceriler.Entities">
+  <class name="BilisselBeceriler.Entities.Web._Yayin, BilisselBeceriler.Entities" table="Yayin" lazy="true">
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="Tarih" column="Tarih" type="datetime"/>
+    <property name="Sayi" column="Sayi" type="string"/>
+    <property name="AktifMi" column="AktifMi" type="bool"/>
+  </class>
+</hibernate-mapping>

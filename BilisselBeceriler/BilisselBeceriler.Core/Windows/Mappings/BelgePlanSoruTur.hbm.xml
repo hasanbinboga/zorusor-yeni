@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.BelgePlanSoruTur,BilisselBeceriler.Entities" table="BelgePlanSoruTur" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="PlanSoruTurRef" column="PlanSoruTurRef" class="PlanSoruTur,BilisselBeceriler.Entities" />
+
+		<many-to-one name="HavuzRef" column="HavuzRef" class="Havuz,BilisselBeceriler.Entities" />
+
+		<many-to-one name="SoruTurSoruSablonRef" column="SoruTurSoruSablonRef" class="SoruTurSoruSablon,BilisselBeceriler.Entities" />
+
+		<many-to-one name="BelgeRef" column="BelgeRef" class="Belge,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="SoruAdet" type="Int32" name="SoruAdet" not-null="true" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListSoru" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="BelgePlanSoruTurRef"/>
+			<one-to-many class="Soru,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

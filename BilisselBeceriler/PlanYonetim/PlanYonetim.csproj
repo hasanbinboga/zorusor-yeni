@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5F5A420-A991-4802-AD24-EE2D0132B156}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlanYonetim</RootNamespace>
+    <AssemblyName>PlanYonetim</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Composite">
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.Presentation">
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.UnityExtensions">
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Composite Application Library\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModuleImpl.cs" />
+    <Compile Include="Codes\Types.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SoruTur\SoruTurEkle.xaml.cs">
+      <DependentUpon>SoruTurEkle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SoruTur\SoruTurYonetim.xaml.cs">
+      <DependentUpon>SoruTurYonetim.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bilgi.png" />
+    <Resource Include="Images\duzelt.png" />
+    <Resource Include="Images\ekle.png" />
+    <Resource Include="Images\hata.png" />
+    <Resource Include="Images\sil.png" />
+    <Resource Include="Images\Uyari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\SoruTur\SoruTurEkle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SoruTur\SoruTurYonetim.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilisselBeceriler.Altyapi\BilisselBeceriler.Altyapi.csproj">
+      <Project>{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}</Project>
+      <Name>BilisselBeceriler.Altyapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Core\BilisselBeceriler.Entities.csproj">
+      <Project>{A218F73A-2F11-4469-A995-54A22EAC70C3}</Project>
+      <Name>BilisselBeceriler.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilisselBeceriler.Data\BilisselBeceriler.Data.csproj">
+      <Project>{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}</Project>
+      <Name>BilisselBeceriler.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(SolutionDir)BilisselBeceriler.Host\bin\$(ConfigurationName)\Modules\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

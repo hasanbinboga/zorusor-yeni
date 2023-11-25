@@ -1,0 +1,13 @@
+﻿<Window x:Class="BilisselBeceriler.HavuzBuilder.ResimSecim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Resim Seçimi" Height="345" Width="327">
+    <DockPanel>
+
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" FlowDirection="RightToLeft">
+            <Button Content="Tamam" Width="80" Height="27" Click="btnTamam_Click" />
+            <Button Content="iptal" Width="80" Height="27" Click="Button_Click" />
+        </StackPanel>
+        <ListBox Name="lbResimler" SelectionMode="Multiple"></ListBox>
+    </DockPanel>
+</Window>

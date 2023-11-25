@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.BelgeSayfa,BilisselBeceriler.Entities" table="BelgeSayfa" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="SayfaRef" column="SayfaRef" class="Sayfa,BilisselBeceriler.Entities" />
+
+		<many-to-one name="BelgeRef" column="BelgeRef" class="Belge,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="SayfaNoVarMi" type="Boolean" name="SayfaNoVarMi" not-null="true" />
+		<property column="SayfaNo" type="Int32" name="SayfaNo" />
+		<property column="Indeks" type="Int32" name="Indeks" not-null="true" />
+		<property column="DikeyMi" type="Boolean" name="DikeyMi" not-null="true" />
+		<property column="Baslik" type="String" name="Baslik" length="100" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListSoru" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="BelgeSayfaRef"/>
+			<one-to-many class="Soru,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

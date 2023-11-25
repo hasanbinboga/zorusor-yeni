@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Yönetim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="/Scripts/ogrenciyonetim.js" type="text/javascript"></script>
+<link href="/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Styles/ogrenciliste.css" rel="stylesheet" type="text/css" />
+@*<script src="/Scripts/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>*@
+<script src="/Scripts/jquery.ui.core.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.mouse.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.draggable.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.position.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.resizable.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.dialog.js" type="text/javascript"></script>
+<div class="icerikkpsul">
+    <div class="icerik">
+        <div class="navigasyon">
+        </div>
+        @RenderBody()
+        <div class="clear">
+        </div>
+    </div>
+</div>

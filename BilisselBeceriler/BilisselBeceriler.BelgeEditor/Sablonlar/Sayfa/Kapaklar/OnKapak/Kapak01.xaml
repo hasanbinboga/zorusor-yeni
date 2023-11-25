@@ -1,0 +1,265 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Tag="BilisselBeceriler.BelgeEditor.Library.Types.OnKapakProcessor"
+      Background="White"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="793"
+      Height="1123">
+    <Grid.Effect>
+        <DropShadowEffect BlurRadius="10" ShadowDepth="8" />
+    </Grid.Effect>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush  />
+        </Grid.Background>
+        <StackPanel Margin="0,100,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Orientation="Horizontal">
+            <TextBlock Margin="0,2,5,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="Yayın Tarihi :"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+            <TextBlock Tag="txbYayinTarih"
+                   Margin="0,2,20,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="15 Ağustos 2011"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+            <TextBlock Margin="0,2,5,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="Sayı :"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+            <TextBlock Tag="txbDergiSayi"
+                   Margin="0,2,20,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="1"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+            <TextBlock Margin="0,2,5,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="Seri No :"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+            <TextBlock Tag="txbSeriNo"
+                   Margin="0,2,0,0"
+                   FontFamily="Arial"
+                   FontSize="9.333"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="FF1E3B74"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel Height="222"
+                Margin="0,159,0,0"
+                VerticalAlignment="Top"
+                Orientation="Vertical">
+            <TextBlock FontFamily="Segoe Print"
+                   FontSize="21.333"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Text="36. AY VE SONRASI"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="7"
+                                  RenderingBias="Quality"
+                                  ShadowDepth="4" />
+            </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock FontFamily="Segoe Print"
+                   FontSize="26.667"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Text="BİREYE ÖZEL ALIŞTIRMA KİTABI"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="7"
+                                  RenderingBias="Quality"
+                                  ShadowDepth="4" />
+            </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Tag="txtCocukAd"
+                   FontFamily="Arial Black"
+                   FontSize="48"
+                   FontWeight="ExtraBold"
+                   Text="MEHMET FAHRİ KARABABA"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="7"
+                                  RenderingBias="Quality"
+                                  ShadowDepth="4" />
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0.211" Color="White" />
+                    <GradientStop Offset="0.483" Color="#FF9D9EE7" />
+                    <GradientStop Offset="0.66" Color="White" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+        <Border Width="350"
+            Height="390"
+            Margin="0,0,0,323"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Tag="brFoto">
+            <Border.Background>
+                <ImageBrush ImageSource="C:\HavuzProjesi\Resimler\CocukFoto\Bizimkiler\KapakCocuk.png" />
+            </Border.Background>
+        </Border>
+        <Grid Margin="0,0,0,293"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Bottom">
+            <TextBlock Width="130.2"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   FontFamily="Segoe Print"
+                   FontSize="18.667"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Tag="txtDogumTarih"
+                   Text="15/05/2006"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="7"
+                                  RenderingBias="Quality"
+                                  ShadowDepth="4" />
+            </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
+        <StackPanel Margin="0,0,0,153"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Orientation="Vertical">
+            <Border Width="450"
+                Height="100"
+                Tag="Logo">
+                <Border.Background>
+                    <ImageBrush ImageSource="C:\HavuzProjesi\Resimler\AnaOkulu\KapakLogo\Logo.PNG" Stretch="Uniform" />
+                </Border.Background>
+            </Border>
+            <Grid>
+                <TextBlock Width="450"
+                       FontFamily="Segoe Print"
+                       FontSize="12"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       LineHeight="1.333"
+                       Text="Özel Çiğdem Taşlıdan Anaokulu Web Adresi: www.cigdemtaslidan.com.tr  E-posta: info@cigdemtaslidan.com.tr"
+                       TextAlignment="Center"
+                       TextWrapping="Wrap"
+                       Tag="OkulBilgi">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="3"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="1" />
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+        <Grid Width="500"
+          Margin="0,0,0,70"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Bottom">
+            <Grid HorizontalAlignment="Left">
+                <StackPanel>
+                    <TextBlock FontFamily="Segoe Print"
+                           FontSize="9.333"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           LineHeight="1.333"
+                           Text="BİLİŞSEL TASARIM"
+                           TextAlignment="Center"
+                           TextDecorations="Underline"
+                           TextWrapping="Wrap">
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="3"
+                                          RenderingBias="Quality"
+                                          ShadowDepth="1" />
+                    </TextBlock.Effect>
+                    </TextBlock>
+                    <TextBlock FontFamily="Segoe Print"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           LineHeight="1.333"
+                           Text="Sebahattin DİLAVER"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap">
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="3"
+                                          RenderingBias="Quality"
+                                          ShadowDepth="1" />
+                    </TextBlock.Effect>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid HorizontalAlignment="Right">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontFamily="Segoe Print"
+                           FontSize="9.333"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           LineHeight="1.333"
+                           Text="GÖRSEL TASARIM"
+                           TextAlignment="Center"
+                           TextDecorations="Underline"
+                           TextWrapping="Wrap">
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="3"
+                                          RenderingBias="Quality"
+                                          ShadowDepth="1" />
+                    </TextBlock.Effect>
+                    </TextBlock>
+                    <TextBlock FontFamily="Segoe Print"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           LineHeight="1.333"
+                           Text="Ruhi KAVASOĞLU"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap">
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="3"
+                                          RenderingBias="Quality"
+                                          ShadowDepth="1" />
+                    </TextBlock.Effect>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Height="12.65"
+          Margin="0,0,0,26.5"
+          VerticalAlignment="Bottom">
+            <TextBlock FontFamily="Arial"
+                   FontSize="11"
+                   Foreground="White"
+                   LineHeight="1.333"
+                   Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 30 Ağustos 2011"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap"
+                   Tag="AltBilgi"/>
+        </Grid>
+    </Grid>
+</Grid>

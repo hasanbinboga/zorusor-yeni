@@ -1,0 +1,295 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalReferences", "ExternalReferences", "{4B947C9C-76EB-42CA-A32C-D0D19635FB20}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalReferences\Iesi.Collections.dll = ExternalReferences\Iesi.Collections.dll
+		ExternalReferences\Iesi.Collections.pdb = ExternalReferences\Iesi.Collections.pdb
+		ExternalReferences\Iesi.Collections.xml = ExternalReferences\Iesi.Collections.xml
+		ExternalReferences\log4net.dll = ExternalReferences\log4net.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Common.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Data.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Logging.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Security.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+		ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll = ExternalReferences\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll
+		..\Program Files\MySQL\MySQL Connector Net 6.3.5\Assemblies\v4.0\MySql.Data.Entity.dll = ..\Program Files\MySQL\MySQL Connector Net 6.3.5\Assemblies\v4.0\MySql.Data.Entity.dll
+		ExternalReferences\NHibernate.dll = ExternalReferences\NHibernate.dll
+		ExternalReferences\NHibernate.pdb = ExternalReferences\NHibernate.pdb
+		ExternalReferences\NHibernate.xml = ExternalReferences\NHibernate.xml
+		ExternalReferences\SilverFlow.Controls.dll = ExternalReferences\SilverFlow.Controls.dll
+		ExternalReferences\SilverFlow.Controls.pdb = ExternalReferences\SilverFlow.Controls.pdb
+		ExternalReferences\WPFToolkit.Extended.dll = ExternalReferences\WPFToolkit.Extended.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BilisselBeceriler.Modules", "BilisselBeceriler.Modules", "{0848A276-E86E-4DA3-8A33-65D1FA96226B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrismLibrary", "PrismLibrary", "{3627EA56-3376-42F4-8A39-2ED4ED6FCCA2}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalReferences\PrismLibrary\Microsoft.Expression.Drawing.dll = ExternalReferences\PrismLibrary\Microsoft.Expression.Drawing.dll
+		ExternalReferences\PrismLibrary\Microsoft.Expression.Interactions.dll = ExternalReferences\PrismLibrary\Microsoft.Expression.Interactions.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.Interactivity.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.Interactivity.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.MefExtensions.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.MefExtensions.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.UnityExtensions.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.Prism.UnityExtensions.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.ServiceLocation.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.ServiceLocation.dll
+		ExternalReferences\PrismLibrary\Microsoft.Practices.Unity.Silverlight.dll = ExternalReferences\PrismLibrary\Microsoft.Practices.Unity.Silverlight.dll
+		ExternalReferences\PrismLibrary\System.Windows.Interactivity.dll = ExternalReferences\PrismLibrary\System.Windows.Interactivity.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity", "Unity", "{CBF684EB-2152-4DE5-B5B1-3EA2EBD6AE69}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalReferences\Unity\Microsoft.Practices.Unity.Configuration.dll = ExternalReferences\Unity\Microsoft.Practices.Unity.Configuration.dll
+		ExternalReferences\Unity\Microsoft.Practices.Unity.dll = ExternalReferences\Unity\Microsoft.Practices.Unity.dll
+		ExternalReferences\Unity\Microsoft.Practices.Unity.Interception.Configuration.dll = ExternalReferences\Unity\Microsoft.Practices.Unity.Interception.Configuration.dll
+		ExternalReferences\Unity\Microsoft.Practices.Unity.Interception.dll = ExternalReferences\Unity\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite Application Library", "Composite Application Library", "{54731FF0-D535-4C00-B1EA-938595DB9E96}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.dll
+		ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.Presentation.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.Presentation.dll
+		ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.UnityExtensions.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.Composite.UnityExtensions.dll
+		ExternalReferences\Composite Application Library\Microsoft.Practices.ObjectBuilder2.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.ObjectBuilder2.dll
+		ExternalReferences\Composite Application Library\Microsoft.Practices.ServiceLocation.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.ServiceLocation.dll
+		ExternalReferences\Composite Application Library\Microsoft.Practices.Unity.dll = ExternalReferences\Composite Application Library\Microsoft.Practices.Unity.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Portal", "Portal\BilisselBeceriler.Portal.csproj", "{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Entities", "BilisselBeceriler.Core\BilisselBeceriler.Entities.csproj", "{A218F73A-2F11-4469-A995-54A22EAC70C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Data", "BilisselBeceriler.Data\BilisselBeceriler.Data.csproj", "{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Test", "BilisselBeceriler.Test\BilisselBeceriler.Test.csproj", "{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.LoggerService", "BilisselBeceriler.LoggerService\BilisselBeceriler.LoggerService.csproj", "{9230D11C-803E-4C7E-AD37-180AC0138013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Portal.Core", "BilisselBeceriler.Portal.Core\BilisselBeceriler.Portal.Core.csproj", "{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.FormLoginService", "BilisselBeceriler.LoginService\BilisselBeceriler.FormLoginService.csproj", "{69CED82B-7644-4D7F-BCD3-C685E26D5874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Utility", "BilisselBeceriler.Utility\BilisselBeceriler.Utility.csproj", "{2FEB34AB-D9B8-4054-9574-136B3B389B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.ImagingService", "BilisselBeceriler.ImagingService\BilisselBeceriler.ImagingService.csproj", "{EB411744-5EF8-4E9D-B185-36E04FEDB232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.FotoAktarim", "BilisselBeceriler.FotoAktarim\BilisselBeceriler.FotoAktarim.csproj", "{985C89F1-722A-4D6E-9918-C71457EC2309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.HavuzBuilder", "BilisselBeceriler.HavuzBuilder\BilisselBeceriler.HavuzBuilder.csproj", "{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Host", "BilisselBeceriler.Host\BilisselBeceriler.Host.csproj", "{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanYonetim", "PlanYonetim\PlanYonetim.csproj", "{B5F5A420-A991-4802-AD24-EE2D0132B156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.Altyapi", "BilisselBeceriler.Altyapi\BilisselBeceriler.Altyapi.csproj", "{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.BelgeEditor.Library", "BilisselBeceriler.BelgeEditor.Library\BilisselBeceriler.BelgeEditor.Library.csproj", "{A0B20B03-0AE1-4811-9907-8CB066C3945C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilisselBeceriler.BelgeEditor", "BilisselBeceriler.BelgeEditor\BilisselBeceriler.BelgeEditor.csproj", "{10958265-72F1-4300-8239-040457CDAD9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7F85C3B1-9F45-4B2C-BD0A-85CBCA6F2DA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A218F73A-2F11-4469-A995-54A22EAC70C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0BF7F0D5-4A7C-4B49-94EB-5F3E89098319}.Release|x86.ActiveCfg = Release|Any CPU
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Debug|x86.ActiveCfg = Debug|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Debug|x86.Build.0 = Debug|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Release|Any CPU.ActiveCfg = Release|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Release|x86.ActiveCfg = Release|x86
+		{CA0F814D-0430-4B2E-BFFB-494FFDBBCD9B}.Release|x86.Build.0 = Release|x86
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9230D11C-803E-4C7E-AD37-180AC0138013}.Release|x86.ActiveCfg = Release|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5AA77A65-8DFA-4C3F-8965-010349D1CF4E}.Release|x86.ActiveCfg = Release|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{69CED82B-7644-4D7F-BCD3-C685E26D5874}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2FEB34AB-D9B8-4054-9574-136B3B389B01}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB411744-5EF8-4E9D-B185-36E04FEDB232}.Release|x86.ActiveCfg = Release|Any CPU
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Debug|x86.ActiveCfg = Debug|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Debug|x86.Build.0 = Debug|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Release|Any CPU.ActiveCfg = Release|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Release|Mixed Platforms.Build.0 = Release|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Release|x86.ActiveCfg = Release|x86
+		{985C89F1-722A-4D6E-9918-C71457EC2309}.Release|x86.Build.0 = Release|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Debug|x86.ActiveCfg = Debug|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Debug|x86.Build.0 = Debug|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Release|Any CPU.ActiveCfg = Release|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Release|x86.ActiveCfg = Release|x86
+		{D493C21F-3B34-43CC-BF94-B4BE7B4AAAF1}.Release|x86.Build.0 = Release|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Debug|x86.ActiveCfg = Debug|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Debug|x86.Build.0 = Debug|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Release|Any CPU.ActiveCfg = Release|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Release|x86.ActiveCfg = Release|x86
+		{7AF396AE-BB5E-4329-AAF7-0C5C8C3022B9}.Release|x86.Build.0 = Release|x86
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B5F5A420-A991-4802-AD24-EE2D0132B156}.Release|x86.ActiveCfg = Release|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D8B9619E-F4EE-485E-BEE8-968B4F2E083E}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A0B20B03-0AE1-4811-9907-8CB066C3945C}.Release|x86.ActiveCfg = Release|Any CPU
+		{10958265-72F1-4300-8239-040457CDAD9D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Debug|x86.ActiveCfg = Debug|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Debug|x86.Build.0 = Debug|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Release|Any CPU.ActiveCfg = Release|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Release|x86.ActiveCfg = Release|x86
+		{10958265-72F1-4300-8239-040457CDAD9D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3627EA56-3376-42F4-8A39-2ED4ED6FCCA2} = {4B947C9C-76EB-42CA-A32C-D0D19635FB20}
+		{CBF684EB-2152-4DE5-B5B1-3EA2EBD6AE69} = {4B947C9C-76EB-42CA-A32C-D0D19635FB20}
+		{54731FF0-D535-4C00-B1EA-938595DB9E96} = {4B947C9C-76EB-42CA-A32C-D0D19635FB20}
+		{B5F5A420-A991-4802-AD24-EE2D0132B156} = {0848A276-E86E-4DA3-8A33-65D1FA96226B}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

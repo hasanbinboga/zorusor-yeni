@@ -1,0 +1,204 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Width="761"
+      Height="1062"
+      Background="White"
+      Tag="BilisselBeceriler.BelgeEditor.Library.Types.StandartSoruProcessor"
+      mc:Ignorable="d">
+    <TextBlock Canvas.Left="3.83"
+               MaxWidth="540"
+               MaxHeight="90"
+               Margin="13,10,1,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               FontFamily="Arial Black"
+               FontSize="32"
+               Foreground="Black"
+               Tag="AntetBaslik"
+               Text="BAŞLIK METNİ"
+               TextAlignment="Center"
+               TextWrapping="Wrap" />
+
+    <StackPanel Height="30"
+                Margin="0,100,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Orientation="Horizontal"
+                Tag="AntetCocukBilgi">
+        <Label Content="Adı Soyadı:"
+               FontFamily="Arial"
+               FontSize="13"
+               FontWeight="Bold" />
+        <Label Content="............................................."
+               FontFamily="Arial"
+               FontSize="13"
+               Tag="AntetAdSoyad" />
+        <Label Content="Doğum Tarihi:"
+               FontFamily="Arial"
+               FontSize="14.667"
+               FontWeight="Bold" />
+        <Label Content="15/05/2006"
+               FontFamily="Arial"
+               FontSize="13"
+               Tag="AntetDogumTarih" />
+    </StackPanel>
+    <Grid Margin="0,10,17,0"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Top">
+        <Border Width="100"
+                Height="134"
+                Background="#FF89B7D4"
+                Tag="AntetFoto">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="14"
+                                  Direction="317"
+                                  ShadowDepth="3"
+                                  Color="Black" />
+            </Border.Effect>
+        </Border>
+    </Grid>
+    <Grid Margin="10,12,0,0"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top">
+        <Border Width="120"
+                Height="120"
+                Background="#FF89B7D4"
+                Tag="AntetLogo" />
+    </Grid>
+    <Grid Margin="45,240,47,318.5">
+    	<Border BorderThickness="1" Background="White" CornerRadius="25">
+    		<Border.Effect>
+    			<DropShadowEffect BlurRadius="42" ShadowDepth="6" Direction="330"/>
+    		</Border.Effect>
+    	</Border>
+    </Grid>
+    <Label Width="75"
+           Margin="0,185,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           Content="1)"
+           FontFamily="Kristen ITC"
+           FontSize="20"
+           FontWeight="Bold"
+           Tag="lblSoruNo1" />
+    <TextBlock Margin="163.118,0,161.758,47.46"
+               VerticalAlignment="Bottom"
+               FontFamily="Tahoma"
+               FontSize="10.667"
+               Text="www.okuldabasari.com - BGDG - Telif Hakları Sebahattin DİLAVER' e aittir. © 19 Mayıs 2011" d:LayoutOverrides="Width" />
+    <Grid Margin="66,281.5,0,0"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top">
+        <Border Width="180"
+                Height="180"
+                Background="#FF89B7D4" />
+    </Grid>
+    <Grid Margin="291.5,281.5,289.5,0"
+          VerticalAlignment="Top"
+          d:LayoutOverrides="VerticalAlignment, Width, GridBox">
+        <Border Width="180"
+                Height="180"
+                Background="#FF89B7D4"/>
+    </Grid>
+    <Grid Margin="0,281.5,65.5,0"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Top"
+          d:LayoutOverrides="GridBox">
+        <Border Width="180"
+                Height="180"
+                Background="#FF89B7D4" />
+    </Grid>
+    <Label Margin="0,0,0,5"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Bottom"
+           Content="Sayfa 1"
+           FontFamily="Tahoma"
+           FontWeight="Bold"
+           Padding="0,5,0,0"
+           Tag="lblSayfaNo" />
+    <Grid Width="35"
+          Margin="10,0,0,243.5"
+          HorizontalAlignment="Left"
+          d:LayoutOverrides="GridBox" Height="35" VerticalAlignment="Bottom">
+        <Ellipse Fill="#FFF4F4F5"
+                 Stroke="#FFBABABA"
+                 StrokeThickness="5"
+                 d:LayoutOverrides="GridBox" />
+        <Label HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="A"
+               FontFamily="Arial"
+               FontSize="13.333"
+               Foreground="#FFBABABA" />
+    </Grid>
+    <Grid Width="35"
+          Margin="0,0,209.5,243.5"
+          HorizontalAlignment="Right"
+          d:LayoutOverrides="GridBox" Height="35" VerticalAlignment="Bottom">
+        <Ellipse Fill="#FFF4F4F5"
+                 Stroke="#FFBABABA"
+                 StrokeThickness="5"
+                 d:LayoutOverrides="GridBox" />
+        <Label HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="C"
+               FontFamily="Arial"
+               FontSize="13.333"
+               Foreground="#FFBABABA" />
+    </Grid>
+    <Grid Margin="49,0,0,98.5"
+    	HorizontalAlignment="Left" VerticalAlignment="Bottom">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4" />
+    </Grid>
+    <Grid Margin="308.5,783.5,272.5,0"
+    	VerticalAlignment="Top"
+		d:LayoutOverrides="Width, GridBox">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4"/>
+    </Grid>
+    <Grid Margin="0,0,25.5,98.5"
+    	HorizontalAlignment="Right"
+		d:LayoutOverrides="GridBox" VerticalAlignment="Bottom">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4" />
+    </Grid>
+    <Grid Width="35"
+    	Margin="269.5,0,0,243.5"
+    	HorizontalAlignment="Left" d:LayoutOverrides="GridBox" Height="35" VerticalAlignment="Bottom">
+    	<Ellipse Fill="#FFF4F4F5"
+    		Stroke="#FFBABABA"
+    		StrokeThickness="5"
+    		d:LayoutOverrides="GridBox" />
+    	<Label HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Content="B"
+    		FontFamily="Arial"
+    		FontSize="13.333"
+    		Foreground="#FFBABABA" />
+    </Grid>
+    <Grid Margin="66,525.5,0,356.5"
+    	HorizontalAlignment="Left" d:LayoutOverrides="Height">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4" />
+    </Grid>
+    <Grid Margin="291.5,525.5,289.5,0"
+    	VerticalAlignment="Top" d:LayoutOverrides="Width, GridBox">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4"/>
+    </Grid>
+    <Grid Margin="0,525.5,65.5,356.5"
+    	HorizontalAlignment="Right"
+		d:LayoutOverrides="Height, GridBox">
+    	<Border Width="180"
+    		Height="180"
+    		Background="#FF89B7D4" />
+    </Grid>
+</Grid>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="BilisselBeceriler.Entities.Windows" assembly="BilisselBeceriler.Entities">
+	<class name="BilisselBeceriler.Entities.Windows.Belge,BilisselBeceriler.Entities" table="Belge" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		
+		<!-- Foreign Keys mapped as Many-To-One relations -->
+		<many-to-one name="PlanRef" column="PlanRef" class="Plan,BilisselBeceriler.Entities" />
+
+		<many-to-one name="YayinRef" column="YayinRef" class="Yayin,BilisselBeceriler.Entities" />
+
+		<many-to-one name="BelgeTurRef" column="BelgeTurRef" class="BelgeTur,BilisselBeceriler.Entities" />
+
+		<!-- Properties -->
+		<property column="OlusturlmaTarih" type="DateTime" name="OlusturlmaTarih" not-null="true" />
+		
+		<!-- One-To-Many relations -->
+		<bag name="ListBelgeBireyselKural" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="BelgeRef"/>
+			<one-to-many class="BelgeBireyselKural,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListBelgePlanSoruTur" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="BelgeRef"/>
+			<one-to-many class="BelgePlanSoruTur,BilisselBeceriler.Entities" />
+		</bag>
+		<bag name="ListBelgeSayfa" generic="true" inverse="true" cascade="none" lazy="true">
+			<key column="BelgeRef"/>
+			<one-to-many class="BelgeSayfa,BilisselBeceriler.Entities" />
+		</bag>
+		
+	</class>
+</hibernate-mapping>

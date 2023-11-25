@@ -1,0 +1,116 @@
+﻿@model IEnumerable<BilisselBeceriler.Entities.Web.Ogrenci>
+@{
+    ViewBag.Title = "Liste";
+    Layout = "~/Views/Shared/_Yonetim.cshtml";
+}
+<div class="bar">
+    <table id="OgrenciListeBar" style="border-collapse: collapse; width: 100%; height: 30px">
+        <tr>
+            <td style="width: 150px;">
+                @Html.DropDownList("ddlSinif", ViewBag.SinifListe as SelectList, new { onchange = "OgrenciListeGetir()" })
+            </td>
+            <td style="width: auto">
+                &nbsp;
+            </td>
+            <td style="width: 50px; text-align: center">
+                <a href="javascript:void(-1)" class="eklelink" onclick="OgrenciEkle()" title="Seçili sınıfa yeni bir öğrenci eklemek için tıklayınız">
+                    Ekle</a>
+            </td>
+            <td style="width: 60px; text-align: center">
+                <a href="javascript:void(-1)" class="guncellelink" onclick="OgrenciDuzelt()" title="Seçili öğrenciye ait bilgileri güncellemek için tıklayınız">
+                    Güncelle</a>
+            </td>
+            <td style="width: 50px; text-align: center">
+                <a href="javascript:void(-1)" class="sillink" onclick="OgrenciSil()" title="Seçili öğrenciyi silmek için tıklayınız">
+                    Sil</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="OgrenciListeKapsul">
+</div>
+<div class="footer">
+    <table id="tFooter" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="width: 12px;">
+                <img src="/Content/resources/images/bilgi2.png" id="iMesajResim" alt="" />
+            </td>
+            <td style="width: auto">
+                <span id="sMesaj">Lütfen sınıf seçiniz</span>
+            </td>
+            <td style="width: 20px; text-align: center;">
+                <img src="" id="iOncekiSayfa" alt="" />
+            </td>
+            <td style="width: 20px; text-align: center;">
+                <img src="" id="iSonrakiSayfa" alt="" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="ogrencieklekapsul" title="Öğrenci Kayıt" style="font-size: 11px">
+    <table id="tOgrenciKapsul" style="width: 100%;" cellspacing="0">
+        <tr>
+            <td style="font-weight: bold; width: 150px;">
+                Sınıf
+            </td>
+            <td>
+                <select id="sSinif">
+                    <option>Seçiniz</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Ad
+            </td>
+            <td>
+                <input id="tbOgrenciAd" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Soyad
+            </td>
+            <td>
+                <input id="tbSoyad" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Doğum Tarih
+            </td>
+            <td>
+                <input id="tbDogumTarih" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Fotoğraf (Cepheden)
+            </td>
+            <td>
+                <input id="fCepheFotograf" type="file" />
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Fotoğraf (Soldan)
+            </td>
+            <td>
+                <input id="fSolFotograf" type="file" />
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Fotoğraf (Sağdan)
+            </td>
+            <td>
+                <input id="fSagFotograf" type="file" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: right">
+                <input id="bKaydet" type="button" value="Kaydet" style="width: 50px" />
+            </td>
+        </tr>
+    </table>
+</div>

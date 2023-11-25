@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>    
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Okulda Başarı" />
+    <meta name="description" content="Okulda Başarı Bilişsel Beceriler" />
+    <meta name="keywords" content="Okul Başarı Basari Ders Not Zeka Bilişşel Beceriler" />
+    <link href="@Url.Content("~/Content/Styles/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+    @*<script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>*@
+    <link rel="stylesheet" href="/content/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/content/nivo-slider/nivo-slider.css" type="text/css" media="screen" />    
+    <script src="/scripts/animate-script.js" type="text/javascript"></script>
+    <script src="/scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.jfontsize-1.0.js" type="text/javascript"></script>
+    <script src="/Scripts/superfish.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function show() {
+                var menu = $(this);
+                menu.children(".actions").slideDown();
+            }
+
+            function hide() {
+                var menu = $(this);
+                menu.children(".actions").slideUp();
+            }
+
+            $(".hover-menu").hoverIntent({
+                sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)
+                interval: 50,   // number = milliseconds for onMouseOver polling interval
+                over: show,     // function = onMouseOver callback (required)
+                timeout: 300,   // number = milliseconds delay before onMouseOut
+                out: hide       // function = onMouseOut callback (required)
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            
+            <div class="row-header-menu">
+                @{Html.RenderAction("SubeListe", "Yonetim");}
+            </div>
+            <div class="row-0">
+                <table style="width: 98%; border: none;">
+                    <tr style="border: none;">
+                        <td style="width: 150px; border: none;">
+                            <img src="/Content/resources/images/header/logo.png" alt="logo" />
+                        </td>
+                        <td style="width: 200px; text-align: right; border: none;">
+                            <a href="/Content/resources/pps/Sunum.pps" target="_blank" class="detaylink">
+                                <img src="../../Content/resources/images/header/Sunum.png" alt="Başarılarımız" />
+                            </a>
+                        </td>
+                        <td style="width: 200px; text-align: right; border: none;">
+                            <a href="/Content/resources/pdf/Basarilarimiz.pdf" target="_blank" class="detaylink">
+                                <img src="../../Content/resources/images/header/Basarilarimiz.png" alt="Başarılarımız" />
+                            </a>
+                        </td>
+                        <td style="width: 200px; text-align: right; border: none;">
+                            <a href="/Content/resources/pdf/TestOrnekleri.pdf" target="_blank" class="detaylink">
+                                <img src="../../Content/resources/images/header/TestOrnekleri.png" alt="Test Örnekleri" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row-1">
+                <ul class="sf-menu">
+                    <li tag="Anasayfa" class="bgr-1">
+                        @Html.ActionLink("ANASAYFA", "index", "Anasayfa", new { }, new { @class = "mains" })
+                    </li>
+                    <li tag="Proje" class="bgr-2">
+                        @Html.ActionLink("PROJEMİZ", "index", "Proje", new { }, new { @class = "mains" })
+                    </li>
+                    <li tag="Urunler" class="bgr-3">
+                        @Html.ActionLink("ÜRÜNLER", "index", "Urunler", new { }, new { @class = "mains" })
+                    </li>
+                    <li tag="Dusuncelerimiz" class="bgr-4">
+                        @Html.ActionLink("DÜŞÜNCELERİMİZ", "index", "Dusuncelerimiz", new { }, new { @class = "mains" })
+                    </li>
+                    <li tag="Kurumsal" class="bgr-1">
+                        @Html.ActionLink("KURUMSAL", "index", "Kurumsal", new { }, new { @class = "mains" })
+                    </li>
+                    <li tag="Iletisim" class="bgr-2">
+                        @Html.ActionLink("İLETİŞİM", "index", "Iletisim", new { }, new { @class = "mains" })
+                    </li>
+                </ul>
+            </div>
+            @RenderBody()
+            <div class="row-5">
+                <div class="links">
+                    <ul>
+                        <li><a href="/Content/resources/pdf/BilisselBeceriler.pdf">Yeni Kitabımız: Bilişsel
+                            Beceriler</a></li>
+                        <li><a href="/Content/resources/pdf/OkuldaBasarininSirlari.pdf">Yeni Kitabımız: Okulda
+                            Üstün Başarının Sırları</a></li>
+                        <li><a href="http://www.bilisselbeceriler.com">Bilişsel Beceriler</a></li>
+                        <li><a href="http://www.beyinlergelisecek.com">Beyinler Gelişecek</a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Çıkış", "Cikis", "Login", new { }, new { @class = "mains" })</li>                            
+                        }
+                        else
+                        { 
+                            <li>@Html.ActionLink("Sisteme Giriş", "Index", "Login", new { }, null)</li>                            
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="row-6" style="text-align: center; color: #000; margin-top: 10px; font-size: 11px;
+                font-family: Tahoma">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/content/nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = window.location.pathname;
+            var tag;
+            var secildimi = 0;
+            $(".sf-menu li").each(function (key, item) {
+                $(item).removeClass("active");
+                tag = $(item).attr("tag")
+                if (url.indexOf(tag) > -1) {
+                    $(item).addClass("active");
+                    secildimi = 1;
+                }
+            });
+            if (secildimi == 0) {
+                $(".sf-menu li[tag='Anasayfa']").addClass("active");
+            }
+        });
+        
+    </script>
+    <script type="text/javascript">
+        $('#wrapper').jfontsize({
+            btnMinusClasseId: '#jfontsize-minus',
+            btnDefaultClasseId: '#jfontsize-default',
+            btnPlusClasseId: '#jfontsize-plus',
+            btnMinusMaxHits: 2,
+            btnPlusMaxHits: 4,
+            sizeChange: 2
+        });
+    </script>
+</body>
+</html>
