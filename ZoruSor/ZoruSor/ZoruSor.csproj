@@ -1,0 +1,1484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DD8188F-620A-4447-B2CB-63D2B5E93C0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZoruSor</RootNamespace>
+    <AssemblyName>ZoruSor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analoji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analoji.Designer.cs">
+      <DependentUpon>Analoji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AynisiniBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AynisiniBul.Designer.cs">
+      <DependentUpon>AynisiniBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButundenParcaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButundenParcaya.Designer.cs">
+      <DependentUpon>ButundenParcaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cakistirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cakistirma.Designer.cs">
+      <DependentUpon>Cakistirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CakistirYanlisiBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CakistirYanlisiBul.Designer.cs">
+      <DependentUpon>CakistirYanlisiBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donusum3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donusum3.Designer.cs">
+      <DependentUpon>Donusum3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donusum1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donusum1.Designer.cs">
+      <DependentUpon>Donusum1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donusum2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donusum2.Designer.cs">
+      <DependentUpon>Donusum2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donusum4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donusum4.Designer.cs">
+      <DependentUpon>Donusum4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarkliElemanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarkliElemanFrm.Designer.cs">
+      <DependentUpon>FarkliElemanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FasikulTest.cs" />
+    <Compile Include="FasikulTestDetail.cs" />
+    <Compile Include="MyTypeBuilder.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali1Sayfa1.Designer.cs">
+      <DependentUpon>AnalojiParcali1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali2Sayfa1.Designer.cs">
+      <DependentUpon>AnalojiParcali2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AnalojiParcali\AnalojiParcali3Sayfa1.Designer.cs">
+      <DependentUpon>AnalojiParcali3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa3.Designer.cs">
+      <DependentUpon>AnalojiSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa4.Designer.cs">
+      <DependentUpon>AnalojiSayfa4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa3.Designer.cs">
+      <DependentUpon>CakistirDogruSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa3.Designer.cs">
+      <DependentUpon>CakistirYanlisSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa1.Designer.cs">
+      <DependentUpon>CakistirYanlisSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirYanlis\CakistirYanlisSayfa2.Designer.cs">
+      <DependentUpon>CakistirYanlisSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurBul\DondurBul2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurBul\DondurBul2Sayfa1.Designer.cs">
+      <DependentUpon>DondurBul2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurBul\DondurBul1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurBul\DondurBul1Sayfa1.Designer.cs">
+      <DependentUpon>DondurBul1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa3.Designer.cs">
+      <DependentUpon>DondurCakistirDogru2Sayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa3.Designer.cs">
+      <DependentUpon>DondurCakistirDogru1Sayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa2.Designer.cs">
+      <DependentUpon>DondurCakistirDogru2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa2.Designer.cs">
+      <DependentUpon>DondurCakistirDogru1Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa3.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis2Sayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa3.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis1Sayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa2.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa2.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis1Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa1.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa1.Designer.cs">
+      <DependentUpon>DondurCakistirYanlis2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa1.Designer.cs">
+      <DependentUpon>DondurCakistirDogru2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa1.Designer.cs">
+      <DependentUpon>DondurCakistirDogru1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman1Sayfa1.Designer.cs">
+      <DependentUpon>EsEleman1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman2Sayfa1.Designer.cs">
+      <DependentUpon>EsEleman2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman3Sayfa1.Designer.cs">
+      <DependentUpon>EsEleman3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman4Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsEleman4Sayfa1.Designer.cs">
+      <DependentUpon>EsEleman4Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsElemanSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EsEleman\EsElemanSayfa1.Designer.cs">
+      <DependentUpon>EsElemanSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa1.Designer.cs">
+      <DependentUpon>FarkliElemanSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa2.Designer.cs">
+      <DependentUpon>FarkliElemanSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarkliEleman\FarkliElemanSayfa3.Designer.cs">
+      <DependentUpon>FarkliElemanSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa1.Designer.cs">
+      <DependentUpon>FarklisiniBulSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa2.Designer.cs">
+      <DependentUpon>FarklisiniBulSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FarklisiniBul\FarklisiniBulSayfa3.Designer.cs">
+      <DependentUpon>FarklisiniBulSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FasikulCevap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FasikulCevap.Designer.cs">
+      <DependentUpon>FasikulCevap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul10Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul10Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul10Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul10Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul10Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul10Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul11Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul11Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul11Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul11Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul11Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul11Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul12Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul12Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul12Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul12Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul12Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul12Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul13Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul13Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul13Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul13Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul13Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul13Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul2Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul2Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul3Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul3Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul3Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul3Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul4Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul4Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul4Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul5Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul5Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul5Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul6Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul6Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul6Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul7Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul7Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul7Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul7Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul7Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul7Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul8Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul8Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul8Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul8Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul8Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul8Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul9Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul9Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBul9Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul9Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBul9Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBul9Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus1Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBulHus1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus1Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus1Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBulHus1Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus2Sayfa1.Designer.cs">
+      <DependentUpon>KuraliBulHus2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulHus2Sayfa2.Designer.cs">
+      <DependentUpon>KuraliBulHus2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa3.Designer.cs">
+      <DependentUpon>KuraliBulSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Melez1Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Melez1Frm.Designer.cs">
+      <DependentUpon>Melez1Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Melez2Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Melez2Frm.Designer.cs">
+      <DependentUpon>Melez2Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrtakElemanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrtakElemanFrm.Designer.cs">
+      <DependentUpon>OrtakElemanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa1.Designer.cs">
+      <DependentUpon>AnalojiSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Analoji\AnalojiSayfa2.Designer.cs">
+      <DependentUpon>AnalojiSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa1.Designer.cs">
+      <DependentUpon>AynisiniBulSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa2.Designer.cs">
+      <DependentUpon>AynisiniBulSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AynisiniBul\AynisiniBulSayfa3.Designer.cs">
+      <DependentUpon>AynisiniBulSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ButunParca\ButunParcaSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ButunParca\ButunParcaSayfa1.Designer.cs">
+      <DependentUpon>ButunParcaSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ButunParca\ButunParcaSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ButunParca\ButunParcaSayfa2.Designer.cs">
+      <DependentUpon>ButunParcaSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa1.Designer.cs">
+      <DependentUpon>CakistirDogruSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CakistirDogru\CakistirDogruSayfa2.Designer.cs">
+      <DependentUpon>CakistirDogruSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CevapAnahtar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CevapAnahtar.Designer.cs">
+      <DependentUpon>CevapAnahtar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa1.Designer.cs">
+      <DependentUpon>DonusumSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarklisiniBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarklisiniBul.Designer.cs">
+      <DependentUpon>FarklisiniBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KavramOlusturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KavramOlusturma.Designer.cs">
+      <DependentUpon>KavramOlusturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurBulUygula1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurBulUygula1.Designer.cs">
+      <DependentUpon>KurBulUygula1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurBulUygula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurBulUygula.Designer.cs">
+      <DependentUpon>KurBulUygula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParcadanButune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParcadanButune.Designer.cs">
+      <DependentUpon>ParcadanButune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Donusum\DonusumSayfa11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa11.Designer.cs">
+      <DependentUpon>DonusumSayfa11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa2.Designer.cs">
+      <DependentUpon>DonusumSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa21.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa21.Designer.cs">
+      <DependentUpon>DonusumSayfa21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa3.Designer.cs">
+      <DependentUpon>DonusumSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa31.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Donusum\DonusumSayfa31.Designer.cs">
+      <DependentUpon>DonusumSayfa31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Kavram\KavramSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Kavram\KavramSayfa1.Designer.cs">
+      <DependentUpon>KavramSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Kavram\KavramSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Kavram\KavramSayfa2.Designer.cs">
+      <DependentUpon>KavramSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa1.Designer.cs">
+      <DependentUpon>KuraliBulSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa2.Designer.cs">
+      <DependentUpon>KuraliBulSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa5.Designer.cs">
+      <DependentUpon>KuraliBulSayfa5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa6.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\KuraliBul\KuraliBulSayfa6.Designer.cs">
+      <DependentUpon>KuraliBulSayfa6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Matris\MatrisAnalojiSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Matris\MatrisAnalojiSayfa1.Designer.cs">
+      <DependentUpon>MatrisAnalojiSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Matris\MatrisSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Matris\MatrisSayfa1.Designer.cs">
+      <DependentUpon>MatrisSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezDortluSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezDortluSayfa1.Designer.cs">
+      <DependentUpon>MelezDortluSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezDortluSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezDortluSayfa2.Designer.cs">
+      <DependentUpon>MelezDortluSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa1.Designer.cs">
+      <DependentUpon>MelezIkiliSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa2.Designer.cs">
+      <DependentUpon>MelezIkiliSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezIkiliSayfa3.Designer.cs">
+      <DependentUpon>MelezIkiliSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa1.Designer.cs">
+      <DependentUpon>MelezUcluSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa2.Designer.cs">
+      <DependentUpon>MelezUcluSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Melez\MelezUcluSayfa3.Designer.cs">
+      <DependentUpon>MelezUcluSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa1.Designer.cs">
+      <DependentUpon>OrtakElemanSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa2.Designer.cs">
+      <DependentUpon>OrtakElemanSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrtakEleman\OrtakElemanSayfa3.Designer.cs">
+      <DependentUpon>OrtakElemanSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu1Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu1Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu1Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu1Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu2Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu2Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu3Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu3Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu3Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu3Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu41Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu41Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu41Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu41Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu41Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu41Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu4Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu4Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu4Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu4Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu4Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu4Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu5Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu5Sayfa1.Designer.cs">
+      <DependentUpon>ParaOyunu5Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu5Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParaOyunu\ParaOyunu5Sayfa2.Designer.cs">
+      <DependentUpon>ParaOyunu5Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParcaButun\ParcaButunSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParcaButun\ParcaButunSayfa1.Designer.cs">
+      <DependentUpon>ParcaButunSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParcaButun\ParcaButunSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ParcaButun\ParcaButunSayfa2.Designer.cs">
+      <DependentUpon>ParcaButunSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SayfaTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SayfaTemplate.Designer.cs">
+      <DependentUpon>SayfaTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SayfaTip.cs" />
+    <Compile Include="Reports\SayiOyunu\SayiOyunSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SayiOyunu\SayiOyunSayfa1.Designer.cs">
+      <DependentUpon>SayiOyunSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski1Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski1Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski1Sayfa2.Designer.cs">
+      <DependentUpon>SimetrikIliski1Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski2Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski2Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski2Sayfa2.Designer.cs">
+      <DependentUpon>SimetrikIliski2Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski3Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski3Sayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski3Sayfa2.Designer.cs">
+      <DependentUpon>SimetrikIliski3Sayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski4Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski4Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski4Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski5Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski5Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski5Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski6Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SimetrikIliski\SimetrikIliski6Sayfa1.Designer.cs">
+      <DependentUpon>SimetrikIliski6Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir1Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir2Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir2Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir2Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir3Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir3Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir3Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir61Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir61Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir61Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir62Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir62Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir62Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir63Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir63Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir63Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir71Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir71Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir71Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir72Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir72Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir72Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir73Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\Siniflandir73Sayfa1.Designer.cs">
+      <DependentUpon>Siniflandir73Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa1.Designer.cs">
+      <DependentUpon>SiniflandirSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa2.Designer.cs">
+      <DependentUpon>SiniflandirSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SiniflandirSayfa3.Designer.cs">
+      <DependentUpon>SiniflandirSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SinifParcaSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Siniflandirma\SinifParcaSayfa1.Designer.cs">
+      <DependentUpon>SinifParcaSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa1.Designer.cs">
+      <DependentUpon>TumuFarkliElemanSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa2.Designer.cs">
+      <DependentUpon>TumuFarkliElemanSayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TumuFarkliEleman\TumuFarkliElemanSayfa3.Designer.cs">
+      <DependentUpon>TumuFarkliElemanSayfa3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\YerDegistir\YerDegistir1Sayfa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\YerDegistir\YerDegistir1Sayfa1.Designer.cs">
+      <DependentUpon>YerDegistir1Sayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoruSayfaTip.cs" />
+    <Compile Include="Siniflandirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siniflandirma.Designer.cs">
+      <DependentUpon>Siniflandirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestReportHelper.cs" />
+    <Compile Include="TestTip.cs" />
+    <Compile Include="UserControls\AnalojiUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AnalojiUc.Designer.cs">
+      <DependentUpon>AnalojiUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AynisiniBulUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AynisiniBulUc.Designer.cs">
+      <DependentUpon>AynisiniBulUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BaseSoruUi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ButunParcaUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ButunParcaUc.Designer.cs">
+      <DependentUpon>ButunParcaUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CakistirUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CakistirUc.Designer.cs">
+      <DependentUpon>CakistirUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Donusum1Uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Donusum1Uc.Designer.cs">
+      <DependentUpon>Donusum1Uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Donusum2Uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Donusum2Uc.Designer.cs">
+      <DependentUpon>Donusum2Uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Donusum3Uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Donusum3Uc.Designer.cs">
+      <DependentUpon>Donusum3Uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fasikul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fasikul.Designer.cs">
+      <DependentUpon>Fasikul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KavramOlusturUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KavramOlusturUc.Designer.cs">
+      <DependentUpon>KavramOlusturUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KurBulUygula1Uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KurBulUygula1Uc.Designer.cs">
+      <DependentUpon>KurBulUygula1Uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MelezUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MelezUc.Designer.cs">
+      <DependentUpon>MelezUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ParcaButunUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ParcaButunUc.Designer.cs">
+      <DependentUpon>ParcaButunUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiniflandirUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiniflandirUc.Designer.cs">
+      <DependentUpon>SiniflandirUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TestUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TestUc.Designer.cs">
+      <DependentUpon>TestUc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analoji.resx">
+      <DependentUpon>Analoji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AynisiniBul.resx">
+      <DependentUpon>AynisiniBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButundenParcaya.resx">
+      <DependentUpon>ButundenParcaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cakistirma.resx">
+      <DependentUpon>Cakistirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CakistirYanlisiBul.resx">
+      <DependentUpon>CakistirYanlisiBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donusum3.resx">
+      <DependentUpon>Donusum3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donusum1.resx">
+      <DependentUpon>Donusum1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donusum2.resx">
+      <DependentUpon>Donusum2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donusum4.resx">
+      <DependentUpon>Donusum4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarkliElemanFrm.resx">
+      <DependentUpon>FarkliElemanFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Melez1Frm.resx">
+      <DependentUpon>Melez1Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Melez2Frm.resx">
+      <DependentUpon>Melez2Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrtakElemanFrm.resx">
+      <DependentUpon>OrtakElemanFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Analoji\AnalojiSayfa1.resx">
+      <DependentUpon>AnalojiSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Analoji\AnalojiSayfa2.resx">
+      <DependentUpon>AnalojiSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AnalojiParcali\AnalojiParcali1Sayfa1.resx">
+      <DependentUpon>AnalojiParcali1Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Analoji\AnalojiSayfa3.resx">
+      <DependentUpon>AnalojiSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Analoji\AnalojiSayfa4.resx">
+      <DependentUpon>AnalojiSayfa4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AynisiniBul\AynisiniBulSayfa1.resx">
+      <DependentUpon>AynisiniBulSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AynisiniBul\AynisiniBulSayfa2.resx">
+      <DependentUpon>AynisiniBulSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AynisiniBul\AynisiniBulSayfa3.resx">
+      <DependentUpon>AynisiniBulSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ButunParca\ButunParcaSayfa1.resx">
+      <DependentUpon>ButunParcaSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ButunParca\ButunParcaSayfa2.resx">
+      <DependentUpon>ButunParcaSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CakistirDogru\CakistirDogruSayfa1.resx">
+      <DependentUpon>CakistirDogruSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CakistirDogru\CakistirDogruSayfa2.resx">
+      <DependentUpon>CakistirDogruSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CakistirDogru\CakistirDogruSayfa3.resx">
+      <DependentUpon>CakistirDogruSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CakistirYanlis\CakistirYanlisSayfa3.resx">
+      <DependentUpon>CakistirYanlisSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CevapAnahtar.resx">
+      <DependentUpon>CevapAnahtar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurBul\DondurBul2Sayfa1.resx">
+      <DependentUpon>DondurBul2Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurBul\DondurBul1Sayfa1.resx">
+      <DependentUpon>DondurBul1Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa3.resx">
+      <DependentUpon>DondurCakistirDogru2Sayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa3.resx">
+      <DependentUpon>DondurCakistirDogru1Sayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa2.resx">
+      <DependentUpon>DondurCakistirDogru2Sayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa2.resx">
+      <DependentUpon>DondurCakistirDogru1Sayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa3.resx">
+      <DependentUpon>DondurCakistirYanlis2Sayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa3.resx">
+      <DependentUpon>DondurCakistirYanlis1Sayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa2.resx">
+      <DependentUpon>DondurCakistirYanlis2Sayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa2.resx">
+      <DependentUpon>DondurCakistirYanlis1Sayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis1Sayfa1.resx">
+      <DependentUpon>DondurCakistirYanlis1Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirYanlis\DondurCakistirYanlis2Sayfa1.resx">
+      <DependentUpon>DondurCakistirYanlis2Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru2Sayfa1.resx">
+      <DependentUpon>DondurCakistirDogru2Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DondurCakistirDogru\DondurCakistirDogru1Sayfa1.resx">
+      <DependentUpon>DondurCakistirDogru1Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa1.resx">
+      <DependentUpon>DonusumSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarklisiniBul.resx">
+      <DependentUpon>FarklisiniBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KavramOlusturma.resx">
+      <DependentUpon>KavramOlusturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurBulUygula1.resx">
+      <DependentUpon>KurBulUygula1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurBulUygula.resx">
+      <DependentUpon>KurBulUygula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParcadanButune.resx">
+      <DependentUpon>ParcadanButune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa11.resx">
+      <DependentUpon>DonusumSayfa11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa2.resx">
+      <DependentUpon>DonusumSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa21.resx">
+      <DependentUpon>DonusumSayfa21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa3.resx">
+      <DependentUpon>DonusumSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Donusum\DonusumSayfa31.resx">
+      <DependentUpon>DonusumSayfa31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\EsEleman\EsElemanSayfa1.resx">
+      <DependentUpon>EsElemanSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FasikulCevap.resx">
+      <DependentUpon>FasikulCevap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Kavram\KavramSayfa1.resx">
+      <DependentUpon>KavramSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Kavram\KavramSayfa2.resx">
+      <DependentUpon>KavramSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KuraliBul\KuraliBulSayfa1.resx">
+      <DependentUpon>KuraliBulSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KuraliBul\KuraliBulSayfa2.resx">
+      <DependentUpon>KuraliBulSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KuraliBul\KuraliBulSayfa3.resx">
+      <DependentUpon>KuraliBulSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KuraliBul\KuraliBulSayfa5.resx">
+      <DependentUpon>KuraliBulSayfa5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KuraliBul\KuraliBulSayfa6.resx">
+      <DependentUpon>KuraliBulSayfa6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Matris\MatrisAnalojiSayfa1.resx">
+      <DependentUpon>MatrisAnalojiSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Matris\MatrisSayfa1.resx">
+      <DependentUpon>MatrisSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezDortluSayfa1.resx">
+      <DependentUpon>MelezDortluSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezDortluSayfa2.resx">
+      <DependentUpon>MelezDortluSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezIkiliSayfa1.resx">
+      <DependentUpon>MelezIkiliSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezIkiliSayfa2.resx">
+      <DependentUpon>MelezIkiliSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezIkiliSayfa3.resx">
+      <DependentUpon>MelezIkiliSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezUcluSayfa1.resx">
+      <DependentUpon>MelezUcluSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezUcluSayfa2.resx">
+      <DependentUpon>MelezUcluSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Melez\MelezUcluSayfa3.resx">
+      <DependentUpon>MelezUcluSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ParcaButun\ParcaButunSayfa1.resx">
+      <DependentUpon>ParcaButunSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ParcaButun\ParcaButunSayfa2.resx">
+      <DependentUpon>ParcaButunSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SayiOyunu\SayiOyunSayfa1.resx">
+      <DependentUpon>SayiOyunSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SimetrikIliski\SimetrikIliski4Sayfa1.resx">
+      <DependentUpon>SimetrikIliski4Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Siniflandirma\SiniflandirSayfa1.resx">
+      <DependentUpon>SiniflandirSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Siniflandirma\SiniflandirSayfa2.resx">
+      <DependentUpon>SiniflandirSayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Siniflandirma\SiniflandirSayfa3.resx">
+      <DependentUpon>SiniflandirSayfa3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Siniflandirma\SinifParcaSayfa1.resx">
+      <DependentUpon>SinifParcaSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\YerDegistir\YerDegistir1Sayfa1.resx">
+      <DependentUpon>YerDegistir1Sayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siniflandirma.resx">
+      <DependentUpon>Siniflandirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AnalojiUc.resx">
+      <DependentUpon>AnalojiUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AynisiniBulUc.resx">
+      <DependentUpon>AynisiniBulUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ButunParcaUc.resx">
+      <DependentUpon>ButunParcaUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CakistirUc.resx">
+      <DependentUpon>CakistirUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Donusum1Uc.resx">
+      <DependentUpon>Donusum1Uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Donusum2Uc.resx">
+      <DependentUpon>Donusum2Uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Donusum3Uc.resx">
+      <DependentUpon>Donusum3Uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fasikul.resx">
+      <DependentUpon>Fasikul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KavramOlusturUc.resx">
+      <DependentUpon>KavramOlusturUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KurBulUygula1Uc.resx">
+      <DependentUpon>KurBulUygula1Uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MelezUc.resx">
+      <DependentUpon>MelezUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ParcaButunUc.resx">
+      <DependentUpon>ParcaButunUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SiniflandirUc.resx">
+      <DependentUpon>SiniflandirUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TestUc.resx">
+      <DependentUpon>TestUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\ZoruSor.UserControls.TestUc.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZoruSor.Havuz\ZoruSor.Lib.csproj">
+      <Project>{987069C0-E748-462B-AF69-E7A8B8F5274F}</Project>
+      <Name>ZoruSor.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt_5_1_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt_5_1_5.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
